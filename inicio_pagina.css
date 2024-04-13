@@ -1,0 +1,170 @@
+/* *PARTE SUPERIOR DE LA PAGINA DE INICIO */
+
+.parte_superior {
+    background-color: black;
+    width: 100%;
+    height: 110px;
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+.imagen {
+    width: 40px;
+    height: 40px;
+    margin: 13px;
+    border-radius: 30px;
+}
+
+.texto {
+    margin: 70px;
+}
+
+/* *PARTE DEL MEDIOSUPERIOR DE LA PAGINA DE INICIO  */
+
+.contenedor-exterior {
+    background-color: #CECFC8;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.imagen_contenedor_interior {
+    position: relative;
+    top: 2px;
+    left: 70px;
+    width: 600px;
+    height: 400px;
+}
+
+.texto_medio {
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top: -50px;
+    left: 100px;
+}
+
+.boton_medio {
+    color: aliceblue;
+    background-color: #07074D;
+    border-color: black;
+    position: relative;
+    top: -1px;
+    left: -50px;
+}
+
+
+/* *PARTE MEDIA, MARCAS DE LA PAGINA DE INICIO */
+
+.titulo_marcas {
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-weight: bolder;
+}
+
+.imagen_marcas {
+
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+    margin: 35px;
+    margin-top: 50px;
+}
+
+
+/* *COLECCION HOMBRE/MUJERES */
+
+.contenedor_coleccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #07074D;
+    width: 100%;
+    height: 370px;
+    margin-top: 30px;
+}
+
+.coleccion_item {
+    width: 50%;
+    height: 370px;
+}
+
+.coleccion_imagen {
+    width: 100%;
+    height: 370px;
+}
+
+.titulo_medio {
+    color: aliceblue;
+    margin-top: 10px;
+    position: relative;
+    top: -190px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+
+}
+
+
+/* *PARTE INFERIOR, INFORMACION */
+
+.contenedor_informacion {
+    background-color:black;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    color: aliceblue;
+}
+
+.contenedor_contacto {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    top: 150px;
+}
+
+.contenedor_contacto_titulo{
+    position: relative;
+    top: 100px;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 30px;
+}
+
+.imagenes_logos_contenedor{
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    border: none;
+    margin: 10px;
+}
+
+.titulo_informacion{
+    position: relative;
+    top: 90px;
+    left: 60px;
+    font-size: 20px;
+}
+
+.imagen_inferior_contenedor{
+    position: relative;
+    top: 75px;
+    left:-160px ;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+
+}
