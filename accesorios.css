@@ -245,6 +245,7 @@
 }
 
 .contenedor_medio_3 img {
+    display: inline-block;
     width: 70%;
     height: 310px;
     margin-right: 25px;
