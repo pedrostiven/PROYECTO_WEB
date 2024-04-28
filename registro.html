@@ -3,15 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Slider Automàtic</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Formulario Registro</title> 
+    <link rel="stylesheet" href="registro.css">
+    <script src="https://kit.fontawesome.com/aca9adbfbc.js" crossorigin="anonymous"></script>
     <style>
         .slider {
             margin-bottom: 50px;
         }
-    </style>
 
-    
+        .input-with-icon {
+            position: relative;
+        }
+
+        .input-with-icon input {
+            padding-left: 30px;
+        }
+
+        .input-icon {
+            position: absolute;
+            left: 8px;
+            top: 50%;
+            transform: translateY(-70%);
+            color: #ffea00;
+        }
+    </style>
 </head>
 <body>
     <div class="slider">
@@ -30,23 +45,40 @@
             </li>
         </ul>
     </div>
-    <link rel="stylesheet" href="style.css">
-  <title>Formulario Registro</title>
 </head>
+
 <body>
-  <section class="form-register">
-    <h4>REGISTRO</h4>
-    <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre">
-    <input class="controls" type="text" name="apellido" id="apellido" placeholder="Apellido">
-    <input class="controls" type="email" name="email" id="email" placeholder="Gmail">
-    <input class="controls" type="number" name="telefono" id="telefono" placeholder="Telefono">
-    <input class="controls" type="password" name="Contraseña" id="Contraseña" placeholder="contraseña">
-    <p>Estoy de acuerdo con <a href="https://www.nike.com.ar/terminos-y-condiciones#:~:text=Estas%20son%20algunas%20reglas%20b%C3%A1sicas%3A%201%20Act%C3%BAe%20con,con%20la%20Plataforma.%203%20Sea%20usted%20mismo.%20">Terminos y Condiciones</a></p>
-    <input class="botons" type="submit" value="Registrar">
-    <p><a href="login.html">¿ya tienes cuenta?</a></p>
-  </section>
+    <section class="form-register">
+        <h4>Clothingsouls</h4>
+        <p>Registro</p>
+        <div class="input-with-icon">
+            <span class="input-icon"><i class="fa-solid fa-person"></i></span>
+            <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre">
+        </div>
+        <div class="input-with-icon">
+            <span class="input-icon"><i class="fa-solid fa-person"></i></span>
+            <input class="controls" type="text" name="apellido" id="apellido" placeholder="Apellido">
+        </div>
+        <div class="input-with-icon">
+            <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+            <input class="controls" type="email" name="email" id="email" placeholder="Gmail">
+        </div>
+        <div class="input-with-icon">
+            <span class="input-icon"><i class="fa-solid fa-phone"></i></span>
+            <input class="controls" type="tel" name="telefono" id="telefono" placeholder="Telefono">
+        </div>
+        <div class="input-with-icon">
+            <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
+            <input class="controls" type="password" name="Contraseña" id="Contraseña" placeholder="Contraseña">
+        </div>
+        <p>Estoy de acuerdo con <a
+                href="https://www.nike.com.ar/terminos-y-condiciones#:~:text=Estas%20son%20algunas%20reglas%20b%C3%A1sicas%3A%201%20Act%C3%BAe%20con,con%20la%20Plataforma.%203%20Sea%20usted%20mismo.%20">Terminos
+                y Condiciones</a></p>
+        <button class="button-19" role="button">Registrar</button>
+        <p><a href="login.html">¿Ya tienes cuenta?</a></p>
+    </section>
 
 </body>
-</html>
 
+</html>
 

@@ -11,21 +11,51 @@
     align-items: center;
 }
 
-.imagen {
-    width: 40px;
-    height: 40px;
-    margin: 13px;
-    border-radius: 30px;
+.parte_superior img {
+    position: relative;
+    left: 30px;
+    width: 100px;
+    height: 90px;
 }
 
-.texto {
+.parte_superior h1 {
+    position: relative;
+    left: 50px;
+}
+
+.parte_superior a {
+    text-decoration: none;
+}
+
+.parte_superior a h5 {
+    position: relative;
+    left: 150px;
+    padding: 10px;
     margin: 70px;
+    color: #f5efff;
+}
+
+.parte_superior a h5:hover {
+    color: #ffd500;
+}
+
+.parte_superior i {
+    color: #ffd500;
+    position: relative;
+    left: 250px;
+    font-size: 30px;
+    margin: 21px;
+    color: #f5efff;
+}
+
+.parte_superior i:hover {
+    color: #ffd500;
 }
 
 /* *PARTE DEL MEDIOSUPERIOR DE LA PAGINA DE INICIO  */
 
 .contenedor-exterior {
-    background-color: #CECFC8;
+    background-color: #ffffff;
     width: 100%;
     height: 400px;
     display: flex;
@@ -36,26 +66,71 @@
     position: relative;
     top: 2px;
     left: 70px;
-    width: 600px;
+    width: 880px;
     height: 400px;
 }
 
 .texto_medio {
-    color: aliceblue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
+    font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
     position: relative;
     top: -50px;
     left: 100px;
 }
 
-.boton_medio {
-    color: aliceblue;
-    background-color: #07074D;
-    border-color: black;
+.button-50 {
     position: relative;
-    top: -1px;
-    left: -50px;
+    left: -60px;
+    appearance: button;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px -70px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
 }
+
+.button-50:focus {
+    text-decoration: none;
+}
+
+.button-50:hover {
+    text-decoration: none;
+}
+
+.button-50:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+}
+
+.button-50:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .button-50 {
+        padding: 12px 50px;
+    }
+}
+
 
 
 /* *PARTE MEDIA, MARCAS DE LA PAGINA DE INICIO */
@@ -65,6 +140,7 @@
     position: relative;
     top: 20px;
     font-weight: bolder;
+    font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
 }
 
 .imagen_marcas {
@@ -75,6 +151,11 @@
     height: 250px;
     margin: 35px;
     margin-top: 50px;
+}
+
+.imagen_marcas:hover {
+    transform: scale(1.1) rotate(360deg);
+    transition: transform 3s ease;
 }
 
 
@@ -93,6 +174,11 @@
 .coleccion_item {
     width: 50%;
     height: 370px;
+}
+
+.coleccion_item:hover{
+    transform: scale(1.1);
+    transition: transform 3s ease;
 }
 
 .coleccion_imagen {
@@ -116,7 +202,7 @@
 /* *PARTE INFERIOR, INFORMACION */
 
 .contenedor_informacion {
-    background-color:black;
+    background-color: black;
     width: 100%;
     height: 500px;
     display: flex;
@@ -135,7 +221,7 @@
     top: 150px;
 }
 
-.contenedor_contacto_titulo{
+.contenedor_contacto_titulo {
     position: relative;
     top: 100px;
     color: aliceblue;
@@ -144,25 +230,27 @@
     font-size: 30px;
 }
 
-.imagenes_logos_contenedor{
+.imagenes_logos_contenedor {
     width: 20px;
     height: 20px;
     border-radius: 30px;
     border: none;
-    margin: 10px;
+    margin: 20px;
+    font-size: 30px;
 }
 
-.titulo_informacion{
+.titulo_informacion {
     position: relative;
     top: 90px;
     left: 60px;
     font-size: 20px;
+    
 }
 
-.imagen_inferior_contenedor{
+.imagen_inferior_contenedor {
     position: relative;
     top: 75px;
-    left:-160px ;
+    left: -160px;
     border-radius: 30px;
     width: 60px;
     height: 60px;

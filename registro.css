@@ -1,44 +1,74 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.slider{
-width: 60%;
-height: 990px;
-overflow: hidden;
+
+.slider {
+  width: 60%;
+  height: 990px;
+  overflow: hidden;
 }
-.slider ul{
+
+.slider ul {
   display: flex;
   animation: cambio 20s infinite alternate linear;
   width: 400%;
 }
-.slider li{
+
+.slider li {
   width: 100%;
   list-style: none;
 }
-.slider img{
+
+.slider img {
   width: 80%;
   height: 100%;
 }
-@keyframes cambio{
-  0%{margin-left: 0;}
-  20%{margin-left: 0;}
-  
-  25%{margin-left: -100%;}
-  45%{margin-left: -100%;}
-  
-  50%{margin-left: -200%;}
-  70%{margin-left: -200%;}
-  
-  75%{margin-left: -300%;}
-  100%{margin-left: -300%;}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+
+  100% {
+    margin-left: -300%;
+  }
 }
-@media only screen and (min-width:320px) and (max-width:768px){
-.slider, .slider ul, .slider img{
-  height: 100vh;
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+
+  .slider,
+  .slider ul,
+  .slider img {
+    height: 100vh;
+  }
 }
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -48,31 +78,33 @@ overflow: hidden;
 
 .form-register {
   width: 400px;
-  background: #000;
+  /* background: #e9ecef; */
   padding: 30px;
   margin: 800px;
   margin-top: 58px;
   border-radius: 4px;
   font-family: 'calibri';
-  color: white;
-  box-shadow: 7px 13px 30px #808080;
+  color: #edf2f4;
+  /*  box-shadow: 7px 13px 30px #fff; */
 }
 
 .form-register h4 {
   font-size: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: center  ;
 }
 
 .controls {
-  width: 100%;
-  background: #24303c;
+  width: 146%;
+  background: #000000;
   padding: 10px;
   border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid #fff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ffea00;
   font-family: 'calibri';
   font-size: 19px;
-  color: white;
+  color: #ffea00;
 }
 
 .form-register p {
@@ -83,30 +115,88 @@ overflow: hidden;
 }
 
 .form-register a {
-  color: white;
+  color: #f8f9fa;
   text-decoration: none;
 }
 
 .form-register a:hover {
-  color: white;
+  color: #ffea00;
   text-decoration: underline;
 }
 
-.form-register .botons {
+.button-19 {
+  appearance: button;
+  background-color: #ffea00;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
   width: 100%;
-  background: #1f53c5;
-  border: none;
-  padding: 12px;
-  color: white;
-  margin: 16px 0;
-  font-size: 16px;
 }
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #ffea00;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+.button-19:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
 .form-register {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
+
 .form-register {
   position: absolute;
   top: 80px;
@@ -117,8 +207,3 @@ overflow: hidden;
 body {
   background-color: black;
 }
-
-
-
-
-
