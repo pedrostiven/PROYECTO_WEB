@@ -2,192 +2,487 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ROPA DE HOMBRE</title>
-    <link rel="stylesheet" href="seccion_hombres.css">
+    <link rel="stylesheet" href="seccion_hombres.css" />
+    <script src="https://kit.fontawesome.com/aca9adbfbc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="parte_superior">
-        <img src="imagenes/logofinal.png" alt="logo" class="imagen imagen_logo">
-        <h5 class="texto">HOMBRE</h5>
-        <h5 class="texto">MUJER</h5>
-        <h5 class="texto">COSAS</h5>
-        <h5 class="texto">SALE</h5>
-        <img src="imagenes/usuario.png" alt="iniciar_seccion" class="imagen">
-        <img src="imagenes/lupa.png" alt="buscador" class="imagen">
-        <img src="imagenes/compra.png" alt="compra" class="imagen">
+        <img src="imagenes/logofinal.png" alt="logo" class="imagen_logo" />
+        <a href="seccion_hombres.html">
+            <h5 class="texto">HOMBRE</h5>
+        </a>
+        <a href="secccion_mujeres.html">
+            <h5 class="texto">MUJER</h5>
+        </a>
+        <a href="accesorios.html">
+            <h5 class="texto">COSAS</h5>
+        </a>
+        <a href="carrito.html">
+            <h5 class="texto">SALE</h5>
+        </a>
+        <a href="login.html"><i class="fa-solid fa-user imagen"></i></a>
+        <i class="fa-solid fa-magnifying-glass imagen"></i>
+        <a href="carrito.html"><i class="fa-solid fa-cart-shopping imagen"></i></a>
     </div>
 
     <div class="seccion_titulos">
         <h2>Ropa para hombre</h2>
         <p>Ropa de hombre en nuestro sitio web y tiendas del país</p>
-        <h5 class="categoria">Categoria</h5>
-        <h5 class="Ordenar">Ordenar por: Relevancia </h5>
+        <h5 class="categoria">CATEGORIA</h5>
+        <strong><label for="ordenar">Ordenar Por:</label></strong>
+        <select name="ordenar" id="ordenar">
+            <option value="relevancia">Relevancia</option>
+            <option value="precio_ascendente">Precio ascendente</option>
+            <option value="precio_descendente">Precio descendente</option>
+            <option value="nuevo">Nuevo</option>
+        </select>
+
     </div>
 
     <div class="categorias_checkbox">
         <div class="bordes"></div>
         <div class="checkboxes">
-            <input class="label" type="checkbox" name="camisetas" id="categoria1">
-            <label class="label" for="categoria1">Camisetas</label><br>
-            <input class="label" type="checkbox" name="Tanks" id="categoria2">
-            <label class="label" for="categoria2">Tanks</label><br>
-            <input class="label" type="checkbox" name="camisas" id="categoria3">
-            <label class="label" for="categoria3">Camisas</label><br>
-            <input class="label" type="checkbox" name="polos" id="categoria4">
-            <label class="label" for="categoria4">polos</label><br>
-            <input class="label" type="checkbox" name="buzos" id="categoria5">
-            <label class="label" for="categoria5">Buzos</label><br>
-            <input class="label" type="checkbox" name="pantalones" id="categoria6">
-            <label class="label" for="categoria6">pantalones</label><br>
-            <input class="label" type="checkbox" name="jeans" id="categoria7">
-            <label class="label" for="categoria7">jeans</label><br>
-            <input class="label" type="checkbox" name="joggers" id="categoria8">
-            <label class="label" for="categoria8">joggers</label><br>
-            <input class="label" type="checkbox" name="shorts" id="categoria9">
-            <label class="label" for="categoria9">shorts</label>
+            <input class="label" type="checkbox" name="camisetas" id="categoria1"
+                data-image="imagenes/camisetas_1.webp imagenes/camiseta_2.jpg imagenes/camisetas_3.webp" />
+            <label class="label" for="">Camisetas</label><br />
+            <input class="label" type="checkbox" name="Tanks" id="categoria2"
+                data-image="imagenes/tanks_1.jpg imagenes/tanks_2.jpg imagenes/tanks_3.jpg" />
+            <label class="label" for="">Tanks</label><br />
+            <input class="label" type="checkbox" name="camisas" id="categoria3"
+                data-image="imagenes/camisas_1.webp imagenes/camisas_2.webp imagenes/camisas_3.webp" />
+            <label class="label" for="">Camisas</label><br />
+            <input class="label" type="checkbox" name="polos" id="categoria4"
+                data-image="imagenes/polo_1.jpg imagenes/polo_2.png imagenes/polo_3.jpg" />
+            <label class="label" for="">polos</label><br />
+            <input class="label" type="checkbox" name="buzos" id="categoria5"
+                data-image="imagenes/Buzo_1.webp imagenes/buzo_2.webp imagenes/buzo_3.webp" />
+            <label class="label" for="">Buzos</label><br />
+            <input class="label" type="checkbox" name="pantalones" id="categoria6"
+                data-image="imagenes/pantalones_1.png imagenes/pantalones_2.jpg imagenes/pantalones_3.jpg" />
+            <label class="label" for="">pantalones</label><br />
+            <input class="label" type="checkbox" name="jeans" id="categoria7" 
+                data-image="imagenes/jeans_1.webp imagenes/jeans_2.jpg imagenes/jeans_3.webp"/>
+            <label class="label" for="">jeans</label><br />
+            <input class="label" type="checkbox" name="joggers" id="categoria8"
+                data-image="imagenes/joggers_1.webp imagenes/joggers_2.webp imagenes/joggers_3.jpeg" />
+            <label class="label" for="">joggers</label><br />
+            <input class="label" type="checkbox" name="shorts" id="categoria9"
+                data-image="imagenes/short_1.webp imagenes/short_2.avif imagenes/short_3.webp" />
+            <label class="label" for="">shorts</label>
         </div>
     </div>
 
     <div class="contenedor_colores">
-        <h5>Color</h5>
+        <h5>COLOR</h5>
         <div class="bordes bordes_color"></div>
         <div class="colores">
-            <div class="color" data-color="rojo" style="background-color: red;"></div>
-            <div class="color" data-color="azul" style="background-color: blue;"></div>
-            <div class="color" data-color="verde" style="background-color: green;"></div>
-            <div class="color" data-color="negro" style="background-color:black"></div>
-            <div class="color" data-color="morado" style="background-color: blueviolet;"></div>
-            <div class="color" data-color="azul_claro" style="background-color:azure"></div>
-            <div class="color color_2" data-color="verde" style="background-color:yellow;"></div>
-            <div class="color color_2" data-color="verde" style="background-color: chocolate;"></div>
-            <div class="color color_2" data-color="verde" style="background-color:brown;"></div>
+            <div class="color" data-color="rojo" style="background-color: red"></div>
+            <div class="color" data-color="azul" style="background-color: blue"></div>
+            <div class="color" data-color="blanco" style="background-color: #ffffff"></div>
+            <div class="color" data-color="negro" style="background-color: black"></div>
+            <div class="color" data-color="gris" style="background-color: #a09486"></div>
+            <div class="color" data-color="azul_claro" style="background-color: azure"></div>
+            <div class="color color_2" data-color="amarillo" style="background-color: yellow"></div>
+            <div class="color color_2" data-color="cafe" style="background-color: chocolate"></div>
+            <div class="color color_2" data-color="cafe_oscuro" style="background-color: brown"></div>
         </div>
     </div>
 
     <div class="seccion_tallas">
         <h5>TALLA</h5>
-        <div class="bordes "></div>
-        <input class="label_2" type="checkbox" name="TALLA_S" id="talla">
-        <label class="label_2" for="talla">S</label><br>
-        <input class="label_2" type="checkbox" name="TALLA_M" id="talla">
-        <label class="label_2" for="talla">M</label><br>
-        <input class="label_2" type="checkbox" name="TALLA_L" id="talla">
-        <label class="label_2" for="talla">L</label><br>
-        <input class="label_2" type="checkbox" name="TALLA_XL" id="talla">
-        <label class="label_2" for="talla">XL</label><br>
+        <div class="bordes"></div>
+        <select name="talla" id="talla">
+            <option value=""></option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
     </div>
 
-    <div class="contenedor_medio_imagenes">
-        <div class="contenedor_medio_1">
-            <img src="imagenes/camisetas_1.webp" alt="">
-            <img src="imagenes/camiseta_2.jpg" alt="">
-            <img src="imagenes/camisetas_3.webp" alt="">
-            <h4>Camisetas</h4>
-            <p>$130.000</p>
-            <h4>Camisetas</h4>
-            <p>$120.000</p>
-            <h4>Camisetas</h4>
-            <p>$110.000</p>
 
+    <div class="contenedor_medio_imagenes">
+
+        <div class="contenedor_medio_1">
+            <div class="producto" data-tallas="S" >
+                <img src="imagenes/camisetas_1.webp" data-color="blanco" alt=""  />
+                <h4>Camisetas</h4>
+                <p>$130.000</p>
+                <div class="descripcion">
+                    <h4>Camiseta Ultraflex</h4><br>
+                    <p>Una camiseta esencial para cualquier ocasión.Fabricada con algodón suave y elastano para un
+                        ajuste perfecto. Transpirable y ligera, te mantiene fresco todo el día. Disponible en una
+                        variedad de colores. Con estilo minimalista y versátil. La camiseta Ultraflex es comodidad y
+                        estilo en uno.</p>
+                </div>
+            </div>
+            <div class="producto" data-tallas="S">
+                <img src="imagenes/camiseta_2.jpg" data-color="rojo" alt="" />
+                <h4>Camisetas</h4>
+                <p>$120.000</p>
+                <div class="descripcion">
+                    <h4>Camiseta SupraSoft</h4><br>
+                    <p>Suavidad inigualable, diseño clásico. Ligera y transpirable. Disponible en varios colores. La
+                        camiseta Supreme Comfort redefine la comodidad.
+                    </p>
+                </div>
+            </div>
+            <div class="producto" data-tallas="M">
+                <img src="imagenes/camisetas_3.webp" data-color="blanco" alt="" />
+                <h4>Camisetas</h4>
+                <p>$110.000</p>
+                <div class="descripcion">
+                    <h4>
+                        Camiseta FlexFit
+                    </h4><br>
+                    <p>Comodidad sin límites. Tejido elástico y transpirable. Ideal para cualquier ocasión. Colores
+                        variados. La camiseta FlexFit: libertad y estilo en uno.
+                    </p>
+                </div>
+            </div>
         </div>
 
+
         <div class="contenedor_medio_2">
-            <img src="imagenes/camisas_1.webp" alt="">
-            <img src="imagenes/camisas_2.webp" alt="">
-            <img src="imagenes/camisas_3.webp" alt="">
-            <h4>Camisa</h4>
-            <p>$20.000</p>
-            <h4>Camisa</h4>
-            <p>$40.000</p>
-            <h4>Camisa</h4>
-            <p>$43.000</p>
+            <div class="producto_2" data-tallas="L">
+                <img src="imagenes/camisas_1.webp" data-color="azul" alt="" />
+                <h4>Camisa</h4>
+                <p>$20.000</p>
+                <div class="descripcion_2">
+                    <h4>Camisa PremiumFit</h4><br>
+                    <p>Elegante y cómoda, nuestra camisa PremiumFit es la elección perfecta para cualquier ocasión.
+                        Confeccionada con algodón de alta calidad y un corte ajustado favorecedor, esta camisa combina
+                        estilo y confort en una sola prenda.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_2" data-tallas="L">
+                <img src="imagenes/camisas_2.webp" data-color="rojo" alt="" />
+                <h4>Camisa</h4>
+                <p>$40.000</p>
+                <div class="descripcion_2">
+                    <h4>Camisa Clásica ComfortFit
+                    </h4><br>
+                    <p>Comodidad y estilo se fusionan en nuestra camisa Clásica ComfortFit. Fabricada con algodón suave
+                        y un corte que realza tu figura sin sacrificar movilidad. Perfecta para cualquier ocasión, desde
+                        reuniones formales hasta salidas casuales. Encuentra tu estilo entre nuestros variados colores y
+                        diseños.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_2" data-tallas="L">
+                <img src="imagenes/camisas_3.webp" data-color="negro" alt="" />
+                <h4>Camisa</h4>
+                <p>$43.000</p>
+                <div class="descripcion_2">
+                    <h4>
+                        Camisa FlexFit
+                    </h4><br>
+                    <p>Estilo y flexibilidad se unen en nuestra camisa FlexFit. Confeccionada con tejido elástico y
+                        transpirable, esta camisa te ofrece comodidad sin límites.
+                    </p>
+                </div>
+            </div>
         </div>
 
         <div class="contenedor_medio_3">
-            <img src="imagenes/tanks_1.jpg" alt="">
-            <img src="imagenes/tanks_2.jpg" alt="">
-            <img src="imagenes/tanks_3.jpg" alt="">
-            <h4>Tanks</h4>
-            <p>$20.500</p>
-            <h4>Tanks</h4>
-            <p>$140.000</p>
-            <h4>Tanks</h4>
-            <p>$443.000</p>
+            <div class="producto_3" data-tallas="L">
+                <img src="imagenes/tanks_1.jpg" data-color="blanco" alt="" />
+                <h4>Tanks</h4>
+                <p>$20.500</p>
+                <div class="descripcion_3">
+                    <h4>Tank Top FlexFit</h4><br>
+                    <p>Libertad y estilo en uno. Tejido elástico y transpirable para mayor comodidad. Ideal para
+                        cualquier actividad. Disponible en varios colores. El Tank Top FlexFit: tu compañero perfecto
+                        para lucir genial y sentirte libre.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_3" data-tallas="XL">
+                <img src="imagenes/tanks_2.jpg" data-color="gris" alt="" />
+                <h4>Tanks</h4>
+                <p>$140.000</p>
+                <div class="descripcion_3">
+                    <h4>Tank Top ActiveCool
+                    </h4><br>
+                    <p>Máxima frescura y movilidad. Tejido transpirable y elástico. Perfecto para todas tus actividades.
+                        Amplia gama de colores disponibles. Activa tu estilo con el Tank Top ActiveCool.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_3" data-tallas="XL">
+                <img src="imagenes/tanks_3.jpg" data-color="gris" alt="" />
+                <h4>Tanks</h4>
+                <p>$443.000</p>
+                <div class="descripcion_3">
+                    <h4>
+                        Tank Top FreedomFit
+                    </h4><br>
+                    <p>Libertad total con estilo. Tejido ligero y elástico. Versátil para cualquier ocasión. Variedad de
+                        colores disponibles. Con el Tank Top FreedomFit, sé libre y a la moda.
+                    </p>
+                </div>
+            </div>
         </div>
+
 
         <div class="contenedor_medio_4">
-            <img src="imagenes/polo_1.jpg" alt="">
-            <img src="imagenes/polo_2.png" alt="">
-            <img src="imagenes/polo_3.jpg" alt="">
-            <h4>Polo</h4>
-            <p>$10.500</p>
-            <h4>Polo</h4>
-            <p>$122.000</p>
-            <h4>Polo</h4>
-            <p>$453.000</p>
+            <div class="producto_4" data-tallas="S">
+                <img src="imagenes/polo_1.jpg" data-color="gris" alt="" />
+                <h4>Polo</h4>
+                <p>$10.500</p>
+                <div class="descripcion_4">
+                    <h4>Polo FlexComfort
+                    </h4><br>
+                    <p>Estilo y comodidad en uno. Tejido elástico de alta calidad. Perfecto para cualquier ocasión.
+                        Variedad de colores y diseños. Con el Polo FlexComfort, destaca con elegancia y confort.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_4" data-tallas="M">
+                <img src="imagenes/polo_2.png" data-color="rojo" alt="" />
+                <h4>Polo</h4>
+                <p>$122.000</p>
+                <div class="descripcion_4">
+                    <h4>Polo FlexFit
+                    </h4><br>
+                    <p>Estilo y flexibilidad se unen en nuestro Polo FlexFit. Confeccionado con tejido elástico de alta
+                        calidad, este polo te brinda comodidad y libertad de movimiento. Ideal para lucir elegante en
+                        cualquier ocasión. Disponible en una variedad de colores clásicos y modernos. Con el Polo
+                        FlexFit, destaca con estilo y confort.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_4" data-tallas="M">
+                <img src="imagenes/polo_3.jpg" data-color="blanco" alt="" />
+                <h4>Polo</h4>
+                <p>$453.000</p>
+                <div class="descripcion_4">
+                    <h4>
+                        Polo ActiveStyle
+                    </h4><br>
+                    <p>Elegancia en movimiento. Tejido elástico y transpirable. Ideal para cualquier ocasión. Amplia
+                        selección de colores disponibles. Con el Polo ActiveStyle, destaca con estilo en todo momento.
+                    </p>
+                </div>
+            </div>
         </div>
+
+
 
         <div class="contenedor_medio_5">
-            <img src="imagenes/Buzo_1.webp" alt="">
-            <img src="imagenes/buzo_2.webp" alt="">
-            <img src="imagenes/buzo_3.webp" alt="">
-            <h4>Buzos</h4>
-            <p>$54.500</p>
-            <h4>Buzos</h4>
-            <p>$176.000</p>
-            <h4>Buzos</h4>
-            <p>$90.000</p>
+            <div class="producto_5" data-tallas="S">
+                <img src="imagenes/Buzo_1.webp" data-color="negro" alt="" />
+                <h4>Buzos</h4>
+                <p>$54.500</p>
+                <div class="descripcion_5">
+                    <h4>Buzo TechComfort
+                    </h4><br>
+                    <p>Comodidad y estilo en uno. Tejido duradero y abrigado. Perfecto para cualquier ocasión. Variedad
+                        de colores disponibles. Con el Buzo TechComfort, estarás siempre a la moda y cómodo.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_5" data-tallas="S">
+                <img src="imagenes/buzo_2.webp" data-color="gris" alt="" />
+                <h4>Buzos</h4>
+                <p>$176.000</p>
+                <div class="descripcion_5">
+                    <h4>Buzo ComfortTech
+                    </h4><br>
+                    <p>Calidez y estilo fusionados. Tejido duradero y suave. Adecuado para cualquier momento. Diversidad
+                        de colores para elegir. Con el Buzo ComfortTech, mantén tu estilo y confort en todo momento.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_5" data-tallas="L">
+                <img src="imagenes/buzo_3.webp" data-color="negro" alt="" />
+                <h4>Buzos</h4>
+                <p>$90.000</p>
+                <div class="descripcion_5">
+                    <h4>
+                        Buzo FlexFit
+                    </h4><br>
+                    <p>Versatilidad y comodidad sin límites. Tejido elástico de alta calidad. Perfecto para cualquier
+                        ocasión. Amplia variedad de colores disponibles. Con el Buzo FlexFit, destaca con estilo y
+                        libertad de movimiento.
+                    </p>
+                </div>
+            </div>
         </div>
+
 
         <div class="contenedor_medio_6">
-            <img src="imagenes/pantalones_1.png" alt="">
-            <img src="imagenes/pantalones_2.jpg" alt="">
-            <img src="imagenes/pantalones_3.jpg" alt="">
-            <h4>Pantalones</h4>
-            <p>$54.700</p>
-            <h4>Pantalones</h4>
-            <p>$176.700</p>
-            <h4>Pantalones</h4>
-            <p>$97.000</p>
+            <div class="producto_6" data-tallas="XL">
+                <img src="imagenes/pantalones_1.png" data-color="negro" alt="" />
+                <h4>Pantalones</h4>
+                <p>$54.700</p>
+                <div class="descripcion_6">
+                    <h4>Pantalones ActiveFlex
+                    </h4><br>
+                    <p>Libertad y estilo en un solo pantalón. Tejido elástico de alta calidad. Perfecto para cualquier
+                        ocasión. Variedad de colores y cortes modernos. Con los Pantalones ActiveFlex, destaca con
+                        comodidad y elegancia.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_6" data-tallas="XL">
+                <img src="imagenes/pantalones_2.jpg" data-color="negro" alt="" />
+                <h4>Pantalones</h4>
+                <p>$176.700</p>
+                <div class="descripcion_6">
+                    <h4>Pantalones FlexComfort
+                    </h4><br>
+                    <p>Comodidad sin igual. Tejido elástico de primera calidad. Versátiles para todas las ocasiones.
+                        Amplia gama de colores y estilos. Con los Pantalones FlexComfort, disfruta del confort y el
+                        estilo en todo momento.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_6" data-tallas="XL">
+                <img src="imagenes/pantalones_3.jpg" data-color="gris" alt="" />
+                <h4>Pantalones</h4>
+                <p>$97.000</p>
+                <div class="descripcion_6">
+                    <h4>
+                        Pantalones ActiveStyle
+                    </h4><br>
+                    <p>Estilo y funcionalidad se fusionan en nuestros Pantalones ActiveStyle. Tejido elástico de calidad
+                        premium. Perfectos para cualquier actividad. Diversidad de colores disponibles. Con los
+                        Pantalones ActiveStyle, marca tendencia con comodidad.
+                    </p>
+                </div>
+            </div>
         </div>
 
+
         <div class="contenedor_medio_7">
-            <img src="imagenes/jeans_1.webp" alt="">
-            <img src="imagenes/jeans_2.jpg" alt="">
-            <img src="imagenes/jeans_3.webp" alt="">
-            <h4>Jeans</h4>
-            <p>$54.700</p>
-            <h4>Jeans</h4>
-            <p>$176.700</p>
-            <h4>Jeans</h4>
-            <p>$97.000</p>
+            <div class="producto_7" data-tallas="XL">
+                <img src="imagenes/jeans_1.webp" data-color="azul_claro" alt="" />
+                <h4>Jeans</h4>
+                <p>$54.700</p>
+                <div class="descripcion_7">
+                    <h4>Jeans UrbanFlex
+                    </h4><br>
+                    <p>Estilo urbano y comodidad. Denim elástico de calidad. Adecuados para cualquier ocasión. Variedad
+                        de lavados y cortes. Con los Jeans UrbanFlex, destaca con estilo y confort en la ciudad.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_7" data-tallas="XL">
+                <img src="imagenes/jeans_2.jpg" data-color="azul"  alt="" />
+                <h4>Jeans</h4>
+                <p>$176.700</p>
+                <div class="descripcion_7">
+                    <h4>Jeans FlexStyle
+                    </h4><br>
+                    <p>Comodidad y estilo en un solo pantalón. Denim elástico de alta calidad. Versátiles para cualquier
+                        ocasión. Variedad de lavados disponibles. Con los Jeans FlexStyle, destaca con elegancia y
+                        comodidad.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_7" data-tallas="XL">
+                <img src="imagenes/jeans_3.webp" data-color="azul_claro" alt="" />
+                <h4>Jeans</h4>
+                <p>$97.000</p> 
+                <div class="descripcion_7">
+                    <h4>
+                        Jeans UrbanChic
+                    </h4><br>
+                    <p>Estilo urbano sin esfuerzo. Denim flexible y duradero. Perfectos para todo momento. Variedad de
+                        estilos y lavados. Con los Jeans UrbanChic, marca tendencia con comodidad.
+                    </p>
+                </div>
+            </div>
         </div>
 
         <div class="contenedor_medio_8">
-            <img src="imagenes/joggers_1.webp" alt="">
-            <img src="imagenes/joggers_2.webp" alt="">
-            <img src="imagenes/joggers_3.jpeg" alt="">
-            <h4>Joggers</h4>
-            <p>$60.000</p>
-            <h4>Joggers</h4>
-            <p>$500.000</p>
-            <h4>Joggers</h4>
-            <p>$130.000</p>
+            <div class="producto_8" data-tallas="L">
+                <img src="imagenes/joggers_1.webp" data-color="gris" alt="" />
+                <h4>Joggers</h4>
+                <p>$60.000</p>
+                <div class="descripcion_8">
+                    <h4>Joggers FlexComfort
+                    </h4><br>
+                    <p>Comodidad y estilo en uno. Tejido elástico de calidad. Perfectos para estar en casa o salir.
+                        Variedad de colores y diseños. Con los Joggers FlexComfort, destaca con comodidad y moda.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_8" data-tallas="L">
+                <img src="imagenes/joggers_2.webp" data-color="gris" alt="" />
+                <h4>Joggers</h4>
+                <p>$500.000</p>
+                <div class="descripcion_8">
+                    <h4>Joggers UrbanFlex
+                    </h4><br>
+                    <p>Estilo urbano y comodidad. Tejido elástico de alta calidad. Versátiles para cualquier ocasión.
+                        Variedad de colores disponibles. Con los Joggers UrbanFlex, destaca con estilo y confort en la
+                        ciudad.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_8" data-tallas="L">
+                <img src="imagenes/joggers_3.jpeg" data-color="gris" alt="" />
+                <h4>Joggers</h4>
+                <p>$130.000</p>
+                <div class="descripcion_8">
+                    <h4>
+                        Joggers FlexStyle
+                    </h4><br>
+                    <p>Comodidad y elegancia fusionadas. Tejido elástico premium. Adecuados para cualquier momento del
+                        día. Amplia gama de colores disponibles. Con los Joggers FlexStyle, marca tendencia con estilo y
+                        confort.
+                    </p>
+                </div>
+            </div>
         </div>
 
         <div class="contenedor_medio_9">
-            <img src="imagenes/short_1.webp" alt="">
-            <img src="imagenes/short_2.avif" alt="">
-            <img src="imagenes/short_3.webp" alt="">
-            <h4>Joggers</h4>
-            <p>$60.000</p>
-            <h4>Joggers</h4>
-            <p>$500.000</p>
-            <h4>Joggers</h4>
-            <p>$130.000</p>
+            <div class="producto_9" data-tallas="L">
+                <img src="imagenes/short_1.webp" data-color="negro" alt="" />
+                <h4>short</h4>
+                <p>$60.000</p>
+                <div class="descripcion_9">
+                    <h4>Shorts ActiveBreathe
+                    </h4><br>
+                    <p>Frescura y libertad de movimiento. Tejido transpirable. Ideal para actividades al aire libre o
+                        entrenamientos. Variedad de colores y estampados. Con los Shorts ActiveBreathe, vive con
+                        comodidad y estilo.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_9" data-tallas="S">
+                <img src="imagenes/short_2.avif" data-color="azul"  alt="" />
+                <h4>short</h4>
+                <p>$500.000</p>
+                <div class="descripcion_9">
+                    <h4>Shorts BreatheLite
+                    </h4><br>
+                    <p>Comodidad y frescura. Tejido transpirable. Perfectos para cualquier actividad. Variedad de
+                        colores disponibles. Con los Shorts BreatheLite, disfruta del estilo sin restricciones.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_9" data-tallas="S">
+                <img src="imagenes/short_3.webp" data-color="gris" alt="" />
+                <h4>Joggers</h4>
+                <p>$130.000</p>
+                <div class="descripcion_9">
+                    <h4>
+                        Shorts FlexCool
+                    </h4><br>
+                    <p>Comodidad y frescura en uno. Tejido transpirable de alta calidad. Adecuados para cualquier
+                        actividad. Variedad de colores disponibles. Con los Shorts FlexCool, mantente fresco y con
+                        estilo en todo momento.
+                    </p>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -197,17 +492,15 @@
     <div class="contenedor_informacion">
         <div class="contenedor_contacto">
             <h4>CONTACTO</h4>
-            <br>
+            <br />
             <p>313488372478</p>
-            <p>Escribenos tus dudas </p>
+            <p>Escribenos tus dudas</p>
             <p>Tiendas fisicas</p>
-<<<<<<< HEAD
-            <img src="imagenes/logofinal.png" alt="cargando" class="imagen_inferior_contenedor">
-
+            <img src="imagenes/logofinal.png" alt="cargando" class="imagen_inferior_contenedor" />
         </div>
         <div class="contenedor_contacto">
             <h4>NECESITAS AYUDA</h4>
-            <br>
+            <br />
             <p>Envíos</p>
             <p>Preguntas frecuentes</p>
             <p>Devoluciones y garantÍas</p>
@@ -215,19 +508,16 @@
 
         <div class="contenedor_contacto">
             <h4>SIGUENOS</h4>
-            <br>
-            <img src="imagenes/logo_wasap.jpg" alt="cargando" class="imagenes_logos_contenedor">
-            <img src="imagenes/logo_tiktok.png" alt="cargando" class="imagenes_logos_contenedor">
-            <br><br>
-            <img src="imagenes/logo_istagram.png" alt="cargando" class="imagenes_logos_contenedor">
-            <img src="imagenes/logo_facebook.jpg" alt="cargando" class="imagenes_logos_contenedor">
+            <br />
+            <i class="fa-brands fa-facebook imagenes_logos_contenedor"></i>
+            <i class="fa-brands fa-square-whatsapp imagenes_logos_contenedor"></i>
+            <i class="fa-brands fa-instagram imagenes_logos_contenedor"></i>
+            <i class="fa-brands fa-tiktok imagenes_logos_contenedor"></i>
             <h5 class="titulo_informacion">2024 clothingsouls</h5>
-
         </div>
-
     </div>
 
-
+    <script src="javascript/seccion_hombres.js"></script>
 </body>
 
 </html>
