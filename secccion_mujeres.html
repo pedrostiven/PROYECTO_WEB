@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ROPA DE MUJER</title>
     <link rel="stylesheet" href="seccion_mujeres.css">
     <script src="https://kit.fontawesome.com/aca9adbfbc.js" crossorigin="anonymous"></script>
@@ -11,7 +11,7 @@
 
 <body>
     <div class="parte_superior">
-        <img src="imagenes/logofinal.png" alt="logo" class="imagen_logo" />
+        <a href="inicio_pagina.html"><img src="imagenes/logofinal.png" alt="logo" class="imagen_logo" /></a>
         <a href="seccion_hombres.html">
             <h5 class="texto">HOMBRE</h5>
         </a>
@@ -24,11 +24,11 @@
         <a href="carrito.html">
             <h5 class="texto">SALE</h5>
         </a>
-        <a href="login.html"><i class="fa-solid fa-user imagen"></i></a>
+        <a href="login.php"><i class="fa-solid fa-user imagen"></i></a>
         <i class="fa-solid fa-magnifying-glass imagen"></i>
+        <input type="text" id="searchName" class="searchBar" placeholder="Buscar por nombre" style="display: none;">
         <a href="carrito.html"><i class="fa-solid fa-cart-shopping imagen"></i></a>
     </div>
-
 
     <div class="seccion_titulos">
         <h2>Ropa para Mujer</h2>
@@ -42,200 +42,495 @@
             <option value="nuevo">Nuevo</option>
         </select>
 
-        <div class="categorias_checkbox">
-            <div class="bordes"></div>
-            <div class="checkboxes">
-                <input class="label" type="checkbox" name="Shorts" id="categoria1" />
-                <label class="label" for="categoria1">Shorts</label><br>
-                <input class="label" type="checkbox" name="Tops" id="categoria2" />
-                <label class="label" for="categoria2">Tops</label><br>
-                <input class="label" type="checkbox" name="Falda" id="categoria3" />
-                <label class="label" for="categoria3">Falda</label><br>
-                <input class="label" type="checkbox" name="Cargo" id="categoria4" />
-                <label class="label" for="categoria4">Cargo</label><br>
-                <input class="label" type="checkbox" name="Buzos" id="categoria5" />
-                <label class="label" for="categoria5">Buzos</label><br>
-                <input class="label" type="checkbox" name="Vestido" id="categoria6" />
-                <label class="label" for="categoria6">Vestido</label><br>
-                <input class="label" type="checkbox" name="Blusa" id="categoria7" />
-                <label class="label" for="categoria7">Blusa</label><br>
-                <input class="label" type="checkbox" name="Joggers" id="categoria8" />
-                <label class="label" for="categoria8">Joggers</label><br>
-                <input class="label" type="checkbox" name="Jeans" id="categoria9" />
-                <label class="label" for="categoria9">Jeans</label><br>
-            </div>
+    </div>
+
+    <div class="categorias_checkbox">
+        <div class="bordes"></div>
+        <div class="checkboxes">
+            <input class="label" type="checkbox" name="Shorts" id="categoria1" 
+            data-image="imagenes/short1.jpg imagenes/short2.jpg imagenes/short3.jpg" />
+            <label class="label" for="">Shorts</label><br>
+            <input class="label" type="checkbox" name="Tops" id="categoria2"
+            data-image="imagenes/top1.jpg imagenes/top2.jpg imagenes/top3.jpg" />
+            <label class="label" for="">Tops</label><br>
+            <input class="label" type="checkbox" name="Falda" id="categoria3" 
+            data-image="imagenes/falda1.jpg imagenes/falda2.jpg imagenes/falda3.jpg"/>
+            <label class="label" for="">Falda</label><br>
+            <input class="label" type="checkbox" name="Cargo" id="categoria4"
+            data-image="imagenes/cargo1.jpg imagenes/cargo2.jpg imagenes/cargo3.jpg" />
+            <label class="label" for="">Cargo</label><br>
+            <input class="label" type="checkbox" name="Buzos" id="categoria5" 
+            data-image="imagenes/camiseta_mujer1.jpg imagenes/camiseta_mujer2.jpg imagenes/camiseta_mujer3.jpg"/>
+            <label class="label" for="">Buzos</label><br>
+            <input class="label" type="checkbox" name="Vestido" id="categoria6" 
+            data-image="imagenes/vestido1.jpg imagenes/vestido2.jpg imagenes/vestido3.jpg"/>
+            <label class="label" for="">Vestido</label><br>
+            <input class="label" type="checkbox" name="Blusa" id="categoria7" 
+            data-image="imagenes/faa40beb736c2e0a9ea8c14851888b36.jpg imagenes/be514e0fe622b583e805e24c738256db.jpg imagenes/bd9355c7967e7eafb65eabcb4ed25e49.jpg" />
+            <label class="label" for="">Blusa</label><br>
+            <input class="label" type="checkbox" name="Joggers" id="categoria8"
+            data-image="imagenes/9909318d3b6a6a96629acfb9a5e6e36e.jpg imagenes/8b0e4a5cec486a1d9ced5d2af583fd4c.jpg imagenes/779ca0913a847ec0eb61ee8d903d4344.jpg" />
+            <label class="label" for="">Joggers</label><br>
+            <input class="label" type="checkbox" name="Jeans" id="categoria9"
+            data-image="imagenes/c73c1f53404fdb145c174d3ba02e3ce2.jpg imagenes/66eac8bf49a33a37e6bedd59a66341e9.jpg imagenes/c70e389f1cdd7be46c251236d6a7c006.jpg" />
+            <label class="label" for="">Jeans</label><br>
         </div>
+    </div>
 
-        <div class="contenedor_colores">
-            <h5>COLOR</h5>
-            <div class="bordes bordes_color"></div>
-            <div class="colores">
-                <div class="color" data-color="rojo" style="background-color: red;"></div>
-                <div class="color" data-color="azul" style="background-color: blue;"></div>
-                <div class="color" data-color="verde" style="background-color: green;"></div>
-                <div class="color" data-color="negro" style="background-color:black"></div>
-                <div class="color" data-color="morado" style="background-color: blueviolet;"></div>
-                <div class="color" data-color="azul_claro" style="background-color:azure"></div>
-                <div class="color color_2" data-color="verde" style="background-color:yellow;"></div>
-                <div class="color color_2" data-color="verde" style="background-color: chocolate;"></div>
-                <div class="color color_2" data-color="verde" style="background-color:brown;"></div>
-            </div>
+    <div class="contenedor_colores">
+        <h5>COLOR</h5>
+        <div class="bordes bordes_color"></div>
+        <div class="colores">
+            <div class="color" data-color="rojo" style="background-color: red;"></div>
+            <div class="color" data-color="azul" style="background-color: blue;"></div>
+            <div class="color" data-color="verde" style="background-color: green;"></div>
+            <div class="color" data-color="negro" style="background-color:black"></div>
+            <div class="color" data-color="morado" style="background-color: blueviolet;"></div>
+            <div class="color" data-color="azul_claro" style="background-color:azure"></div>
+            <div class="color color_2" data-color="blanco" style="background-color:honeydew;"></div>
+            <div class="color color_2" data-color="cafe" style="background-color: chocolate;"></div>
+            <div class="color color_2" data-color="rojo_fuerte" style="background-color:brown;"></div>
         </div>
+    </div>
 
-        <div class="seccion_tallas">
-            <h5>TALLA</h5>
-            <div class="bordes"></div>
-            <select name="talla" id="talla">
-                <option value=""></option>
-                <option value="S">S</option>
-                <option value="M">M</option>
-                <option value="L">L</option>
-                <option value="XL">XL</option>
-            </select>
-        </div>
+    <div class="seccion_tallas">
+        <h5>TALLA</h5>
+        <div class="bordes"></div>
+        <select name="talla" id="talla">
+            <option value=""></option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+    </div>
 
-        <div class="contenedor_medio_imagenes">
 
-            <div class="contenedor_medio_1">
-                <img src="imagenes/short 1.jpg" alt="">
-                <img src="imagenes/short 2.jpg" alt="">
-                <img src="imagenes/short 3.jpg" alt="">
+    <div class="contenedor_medio_imagenes">
+
+        <div class="contenedor_medio_1">
+            <div class="producto" data-tallas="S" data-nombre="Brisa Veraniega Shorts">
+                <!-- <img src="imagenes/short 1.jpg" data-color="azul_claro" alt="" /> -->
+                <img src="imagenes/short1.jpg" data-color="azul" alt="">
                 <h4>Shorts</h4>
                 <p>$130.000</p>
+                <div class="descripcion">
+                    <h4>Brisa Veraniega Shorts</h4><br>
+                    <p>Comodidad y estilo en una prenda. Ligeramente confeccionados para el verano, te mantienen fresca
+                        y con movilidad en cada actividad. Con un corte favorecedor y una variedad de colores y
+                        estampados, son perfectos para cualquier ocasión.
+                    </p>
+                </div>
+            </div>
+            <div class="producto" data-tallas="S" data-nombre="Shorts Livianos">
+                <img src="imagenes/short2.jpg" data-color="negro" alt="" />
                 <h4>Shorts</h4>
                 <p>$120.000</p>
+                <div class="descripcion">
+                    <h4>Shorts Livianos</h4><br>
+                    <p>Versatilidad y frescura para tu verano. Cómodos y favorecedores, te brindan libertad de
+                        movimiento en cualquier situación. Con opciones de color y diseño para todos los gustos, son la
+                        elección perfecta para lucir con estilo en días soleados.
+                    </p>
+                </div>
+            </div>
+            <div class="producto" data-tallas="S" data-nombre="Brisa Shorts">
+                <img src="imagenes/short3.jpg" data-color="azul" alt="" />
                 <h4>Shorts</h4>
                 <p>$110.000</p>
-
+                <div class="descripcion">
+                    <h4>
+                        Brisa Shorts
+                    </h4><br>
+                    <p>Comodidad y estilo para días calurosos. Ligeros y versátiles, te mantienen fresca y con un look
+                        impecable. Con una variedad de colores y estampados para elegir, son la opción ideal para
+                        cualquier actividad bajo el sol.
+                    </p>
+                </div>
             </div>
+        </div>
 
-            <div class="contenedor_medio_2">
-                <img src="imagenes/top 1.jpg" alt="">
-                <img src="imagenes/top 2.jpg" alt="">
-                <img src="imagenes/top 3.jpg" alt="">
+
+        <div class="contenedor_medio_2">
+            <div class="producto_2" data-tallas="M" data-nombre="Top Brisa">
+                <img src="imagenes/top1.jpg" data-color="verde" alt="" />
                 <h4>Tops</h4>
                 <p>$20.000</p>
+                <div class="descripcion_2">
+                    <h4>Top Brisa</h4><br>
+                    <p>ofrece frescura y estilo en cada ocasión. Confeccionado con telas ligeras y transpirables, te
+                        mantiene cómoda durante los días calurosos. Su diseño favorecedor realza tu figura, siendo
+                        perfecto para combinar con cualquier prenda. Disponible en una variedad de colores y estampados,
+                        es la elección versátil para tu verano.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_2" data-tallas="M" data-nombre="Elegance Top">
+                <img src="imagenes/top2.jpg" data-color="blanco" alt="" />
                 <h4>Tops</h4>
                 <p>$40.000</p>
+                <div class="descripcion_2">
+                    <h4>Elegance Top
+                    </h4><br>
+                    <p>fusiona estilo y comodidad en una sola prenda. Confeccionado con telas de alta calidad, ofrece
+                        frescura y suavidad en cada uso. Su diseño elegante realza tu figura, siendo perfecto para
+                        cualquier ocasión. Disponible en una variedad de colores clásicos, es la opción versátil que
+                        necesitas en tu armario.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_2" data-tallas="M" data-nombre="Top Breeze">
+                <img src="imagenes/top3.jpg" data-color="negro" alt="" />
                 <h4>Tops</h4>
                 <p>$43.000</p>
+                <div class="descripcion_2">
+                    <h4>
+                        Top Breeze
+                    </h4><br>
+                    <p>es la definición de frescura y estilo. Confeccionado con telas livianas y transpirables, te
+                        mantiene cómoda en días calurosos. Su diseño versátil combina perfectamente con cualquier
+                        atuendo. Disponible en una gama de tonos vibrantes y estampados chic, es el compañero ideal para
+                        tu verano con estilo.
+                    </p>
+                </div>
             </div>
+        </div>
 
-            <div class="contenedor_medio_3">
-                <img src="imagenes/falda1.jpg" alt="">
-                <img src="imagenes/falda 2.jpg" alt="">
-                <img src="imagenes/falda 3.jpg" alt="">
+
+        <div class="contenedor_medio_3">
+            <div class="producto_3" data-tallas="XL" data-nombre="Falda Breeze">
+                <img src="imagenes/falda1.jpg" data-color="blanco" alt="" />
                 <h4>Falda</h4>
                 <p>$20.500</p>
+                <div class="descripcion_3">
+                    <h4>Falda Breeze</h4><br>
+                    <p>es tu compañera perfecta para días soleados. Confeccionada con telas livianas y fluidas, te
+                        brinda comodidad y elegancia en cada paso. Su diseño versátil te permite crear diversos looks,
+                        ya sea para una salida casual o una ocasión especial. Disponible en una variedad de colores y
+                        estilos, es la pieza imprescindible para tu guardarropa de verano.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_3" data-tallas="XL" data-nombre="Falda Veraniega">
+                <img src="imagenes/falda2.jpg" data-color="negro" alt="" />
                 <h4>Falda</h4>
                 <p>$140.000</p>
+                <div class="descripcion_3">
+                    <h4>Falda Veraniega
+                    </h4><br>
+                    <p>es sinónimo de frescura y estilo. Confeccionada con telas suaves y ligeras, te envuelve en
+                        comodidad durante los días cálidos. Su diseño versátil se adapta a cualquier ocasión, desde
+                        paseos por la playa hasta salidas urbanas. Disponible en una paleta de colores refrescantes,
+                        esta falda se convierte en el complemento perfecto para tu verano lleno de aventuras.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_3" data-tallas="XL" data-nombre="Falda Brisa">
+                <img src="imagenes/falda3.jpg" data-color="negro" alt="" />
                 <h4>Falda</h4>
                 <p>$443.000</p>
+                <div class="descripcion_3">
+                    <h4>
+                        Falda Brisa
+                    </h4><br>
+                    <p>te envuelve en una sensación de ligereza y elegancia. Confeccionada con telas suaves y fluidas,
+                        esta falda es perfecta para los días soleados.
+                    </p>
+                </div>
             </div>
+        </div>
 
-            <div class="contenedor_medio_4">
-                <img src="imagenes/cargo 1.jpg" alt="">
-                <img src="imagenes/cargo 2.jpg" alt="">
-                <img src="imagenes/cargo 3.jpg" alt="">
+
+        <div class="contenedor_medio_4">
+            <div class="producto_4" data-tallas="L" data-nombre="Cargo Liviana">
+                <img src="imagenes/cargo1.jpg" data-color="verde" alt="" />
                 <h4>Cargo</h4>
                 <p>$10.500</p>
+                <div class="descripcion_4">
+                    <h4>Cargo Liviana
+                    </h4><br>
+                    <p>es la combinación perfecta entre estilo y funcionalidad. Confeccionada en un suave y resistente
+                        tejido de denim, esta prenda te ofrece comodidad y durabilidad. Su diseño presenta bolsillos
+                        amplios y detalles de costura que aportan un toque moderno y versátil.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_4" data-tallas="L" data-nombre="Cargo Fresco">
+                <img src="imagenes/cargo2.jpg" data-color="blanco" alt="" />
                 <h4>Cargo</h4>
                 <p>$122.000</p>
+                <div class="descripcion_4">
+                    <h4>Cargo Fresco
+                    </h4><br>
+                    <p> es una versión moderna y fresca del clásico pantalón cargo. Confeccionado en un tejido de denim
+                        ligero y transpirable, este pantalón ofrece comodidad y estilo en cada paso. Su diseño presenta
+                        bolsillos utilitarios en los laterales que no solo son funcionales, sino que también agregan un
+                        toque de tendencia a tu look.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_4" data-tallas="L" data-nombre="Cargo Elegante">
+                <img src="imagenes/cargo3.jpg" data-color="cafe" alt="" />
                 <h4>Cargo</h4>
                 <p>$453.000</p>
+                <div class="descripcion_4">
+                    <h4>
+                        Cargo Elegante
+                    </h4><br>
+                    <p>redefine el estilo casual con su sofisticada interpretación del pantalón cargo. Confeccionado en
+                        un suave tejido de denim, este pantalón combina comodidad y elegancia en una sola prenda. Su
+                        diseño presenta detalles cuidadosamente elaborados, como bolsillos amplios y costuras
+                        acentuadas, que añaden un toque de distinción a tu look.
+                    </p>
+                </div>
             </div>
+        </div>
 
-            <div class="contenedor_medio_5">
-                <img src="imagenes/camiseta_mujer1.jpg" alt="">
-                <img src="imagenes/camiseta_mujer2.jpg" alt="">
-                <img src="imagenes/camiseta_mujer3.jpg" alt="">
+
+
+        <div class="contenedor_medio_5">
+            <div class="producto_5" data-tallas="S" data-nombre="Buzo Brisa">
+                <img src="imagenes/camiseta_mujer1.jpg" data-color="blanco" alt="" />
                 <h4>Buzos</h4>
                 <p>$54.500</p>
+                <div class="descripcion_5">
+                    <h4>Buzo Brisa
+                    </h4><br>
+                    <p>es la opción perfecta para mantenerte cómoda y con estilo en cualquier ocasión. Confeccionado con
+                        telas suaves y transpirables, este buzo te envuelve en una sensación de ligereza y frescura.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_5" data-tallas="S" data-nombre="Buzo Ligero">
+                <img src="imagenes/camiseta_mujer2.jpg" data-color="blanco" alt="" />
                 <h4>Buzos</h4>
                 <p>$176.000</p>
+                <div class="descripcion_5">
+                    <h4>Buzo Ligero
+                    </h4><br>
+                    <p> es tu compañero perfecto para días frescos y noches acogedoras. Confeccionado con tejidos suaves
+                        y ligeros, este buzo ofrece comodidad sin sacrificar el estilo.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_5" data-tallas="S" data-nombre="Buzo Fresco">
+                <img src="imagenes/camiseta_mujer3.jpg" data-color="" alt="" />
                 <h4>Buzos</h4>
                 <p>$90.000</p>
-            </div>
-
-            <div class="contenedor_medio_6">
-                <img src="imagenes/vestido 1.jpg" alt="">
-                <img src="imagenes/vestido 2.jpg" alt="">
-                <img src="imagenes/vestido 3.jpg" alt="">
-                <h4>Vestido</h4>
-                <p>$54.700</p>
-                <h4>Vestido</h4>
-                <p>$176.700</p>
-                <h4>Vestido</h4>
-                <p>$97.000</p>
-            </div>
-
-            <div class="contenedor_medio_7">
-                <img src="imagenes/faa40beb736c2e0a9ea8c14851888b36.jpg" alt="">
-                <img src="imagenes/be514e0fe622b583e805e24c738256db.jpg" alt="">
-                <img src="imagenes/bd9355c7967e7eafb65eabcb4ed25e49.jpg" alt="">
-                <h4>Blusa</h4>
-                <p>$54.700</p>
-                <h4>Blusa</h4>
-                <p>$176.700</p>
-                <h4>Blusa</h4>
-                <p>$97.000</p>
-            </div>
-
-            <div class="contenedor_medio_8">
-                <img src="imagenes/9909318d3b6a6a96629acfb9a5e6e36e.jpg" alt="">
-                <img src="imagenes/8b0e4a5cec486a1d9ced5d2af583fd4c.jpg" alt="">
-                <img src="imagenes/779ca0913a847ec0eb61ee8d903d4344.jpg" alt="">
-                <h4>Joggers</h4>
-                <p>$60.000</p>
-                <h4>Joggers</h4>
-                <p>$500.000</p>
-                <h4>Joggers</h4>
-                <p>$130.000</p>
-            </div>
-
-            <div class="contenedor_medio_9">
-                <img src="imagenes/c73c1f53404fdb145c174d3ba02e3ce2.jpg" alt="">
-                <img src="imagenes/66eac8bf49a33a37e6bedd59a66341e9.jpg" alt="">
-                <img src="imagenes/c70e389f1cdd7be46c251236d6a7c006.jpg" alt="">
-                <h4>Jeans</h4>
-                <p>$60.000</p>
-                <h4>Jeans</h4>
-                <p>$500.000</p>
-                <h4>Jeans</h4>
-                <p>$130.000</p>
-            </div>
-
-        </div>
-        
-        <h2 class="contenedor_contacto_titulo">clothingsouls</h2>
-        <div class="contenedor_informacion">
-            <div class="contenedor_contacto">
-                <h4>CONTACTO</h4>
-                <br />
-                <p>313488372478</p>
-                <p>Escribenos tus dudas</p>
-                <p>Tiendas fisicas</p>
-                <img src="imagenes/logofinal.png" alt="cargando" class="imagen_inferior_contenedor" />
-            </div>
-            <div class="contenedor_contacto">
-                <h4>NECESITAS AYUDA</h4>
-                <br />
-                <p>Envíos</p>
-                <p>Preguntas frecuentes</p>
-                <p>Devoluciones y garantÍas</p>
-            </div>
-    
-            <div class="contenedor_contacto">
-                <h4>SIGUENOS</h4>
-                <br />
-                <i class="fa-brands fa-facebook imagenes_logos_contenedor"></i>
-                <i class="fa-brands fa-square-whatsapp imagenes_logos_contenedor"></i>
-                <i class="fa-brands fa-instagram imagenes_logos_contenedor"></i>
-                <i class="fa-brands fa-tiktok imagenes_logos_contenedor"></i>
-                <h5 class="titulo_informacion">2024 clothingsouls</h5>
+                <div class="descripcion_5">
+                    <h4>
+                        Buzo Fresco
+                    </h4><br>
+                    <p>es la elección perfecta para mantenerte cómoda y con estilo en cualquier momento del día.
+                        Confeccionado con telas suaves y transpirables, este buzo te envuelve en una sensación de
+                        frescura y ligereza. Su diseño moderno y versátil lo convierte en la opción ideal para combinar
+                        con tus conjuntos casuales favoritos.
+                    </p>
+                </div>
             </div>
         </div>
 
+
+        <div class="contenedor_medio_6">
+            <div class="producto_6" data-tallas="M" data-nombre="Vestido Brisa">
+                <img src="imagenes/vestido1.jpg" data-color="" alt="" />
+                <h4>Vestido</h4>
+                <p>$54.700</p>
+                <div class="descripcion_6">
+                    <h4>Vestido Brisa
+                    </h4><br>
+                    <p> te envuelve en una sensación de frescura y elegancia. Confeccionado con telas suaves y livianas,
+                        este vestido ofrece comodidad y estilo en cada paso. Su diseño fluido y versátil se adapta a
+                        cualquier ocasión, desde salidas casuales hasta eventos especiales.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_6" data-tallas="M" data-nombre="">
+                <img src="imagenes/vestido2.jpg" data-color="Vestido Veraniego" alt="" />
+                <h4>Vestido</h4>
+                <p>$176.700</p>
+                <div class="descripcion_6">
+                    <h4>Vestido Veraniego
+                    </h4><br>
+                    <p> es tu opción número uno para lucir fresca y con estilo en los días cálidos. Confeccionado con
+                        telas ligeras y transpirables, este vestido te brinda comodidad durante todo el día.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_6" data-tallas="M" data-nombre="Vestido Brisa Marina">
+                <img src="imagenes/vestido3.jpg" data-color="" alt="" />
+                <h4>Vestido</h4>
+                <p>$97.000</p>
+                <div class="descripcion_6">
+                    <h4>
+                        Vestido Brisa Marina
+                    </h4><br>
+                    <p> evoca la frescura y la elegancia de la brisa del mar. Confeccionado con telas suaves y livianas,
+                        este vestido te envuelve en una sensación de comodidad y estilo. Su diseño presenta detalles
+                        inspirados en el mar, como estampados de conchas o colores que recuerdan al océano, que añaden
+                        un toque encantador y veraniego.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="contenedor_medio_7">
+            <div class="producto_7" data-tallas="L" data-nombre="Blusa Brisa">
+                <img src="imagenes/faa40beb736c2e0a9ea8c14851888b36.jpg" data-color="" alt="" />
+                <h4>Blusa</h4>
+                <p>$54.700</p>
+                <div class="descripcion_7">
+                    <h4>Blusa Brisa
+                    </h4><br>
+                    <p>es sinónimo de frescura y estilo. Confeccionada con telas suaves y livianas, esta blusa te
+                        envuelve en una sensación de comodidad durante todo el día.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_7" data-tallas="L" data-nombre="Blusa Primaveral">
+                <img src="imagenes/be514e0fe622b583e805e24c738256db.jpg" data-color="" alt="" />
+                <h4>Blusa</h4>
+                <p>$176.700</p>
+                <div class="descripcion_7">
+                    <h4>Blusa Primaveral
+                    </h4><br>
+                    <p>es una opción encantadora para dar la bienvenida a la temporada con estilo. Confeccionada con
+                        telas suaves y delicadas, esta blusa te brinda una sensación de ligereza y frescura.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_7" data-tallas="L" data-nombre="Blusa Serenidad">
+                <img src="imagenes/bd9355c7967e7eafb65eabcb4ed25e49.jpg" data-color="" alt="" />
+                <h4>Blusa</h4>
+                <p>$97.000</p>
+                <div class="descripcion_7">
+                    <h4>
+                        Blusa Serenidad
+                    </h4><br>
+                    <p> te envuelve en una atmósfera de calma y elegancia. Confeccionada con telas suaves y fluidas,
+                        esta blusa ofrece una sensación de ligereza y comodidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor_medio_8">
+            <div class="producto_8" data-tallas="XL" data-nombre="Joggers Brisa">
+                <img src="imagenes/9909318d3b6a6a96629acfb9a5e6e36e.jpg" data-color="" alt="" />
+                <h4>Joggers</h4>
+                <p>$60.000</p>
+                <div class="descripcion_8">
+                    <h4>Joggers Brisa
+                    </h4><br>
+                    <p>son la fusión perfecta entre comodidad y estilo. Confeccionados con tejidos suaves y
+                        transpirables, estos joggers te brindan una sensación de ligereza y libertad de movimiento.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_8" data-tallas="XL" data-nombre="Joggers Livianos">
+                <img src="imagenes/8b0e4a5cec486a1d9ced5d2af583fd4c.jpg" data-color="" alt="" />
+                <h4>Joggers</h4>
+                <p>$500.000</p>
+                <div class="descripcion_8">
+                    <h4>Joggers Livianos
+                    </h4><br>
+                    <p>son la opción perfecta para un estilo relajado y sofisticado. Confeccionados con tejidos suaves y
+                        ligeros, estos joggers ofrecen comodidad durante todo el día. Su diseño versátil presenta
+                        detalles minimalistas y una silueta ajustada que los hacen ideales para combinar con una
+                        variedad de tops y calzado.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_8" data-tallas="XL" data-nombre="Joggers Breeze">
+                <img src="imagenes/779ca0913a847ec0eb61ee8d903d4344.jpg" data-color="" alt="" />
+                <h4>Joggers</h4>
+                <p>$130.000</p>
+                <div class="descripcion_8">
+                    <h4>
+                        Joggers Breeze
+                    </h4><br>
+                    <p>son la elección perfecta para un estilo casual y fresco. Confeccionados con tejidos suaves y
+                        transpirables, estos joggers ofrecen comodidad y libertad de movimiento en cada paso.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="contenedor_medio_9">
+            <div class="producto_9" data-tallas="S" data-nombre="Jeans Breeze">
+                <img src="imagenes/c73c1f53404fdb145c174d3ba02e3ce2.jpg" data-color="" alt="" />
+                <h4>Jeans</h4>
+                <p>$60.000</p>
+                <div class="descripcion_9">
+                    <h4>Jeans Breeze
+                    </h4><br>
+                    <p>son la opción perfecta para un estilo fresco y casual. Confeccionados con denim ligero y
+                        transpirable, estos jeans te brindan comodidad y libertad de movimiento en cualquier ocasión.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_9" data-tallas="XL" data-nombre="Jeans Livianos">
+                <img src="imagenes/66eac8bf49a33a37e6bedd59a66341e9.jpg" data-color="" alt="" />
+                <h4>Jeans</h4>
+                <p>$500.000</p>
+                <div class="descripcion_9">
+                    <h4>Jeans Livianos
+                    </h4><br>
+                    <p>son tu opción esencial para un estilo cómodo y versátil. Confeccionados con denim suave y ligero,
+                        estos jeans ofrecen una sensación de frescura y libertad de movimiento.
+                    </p>
+                </div>
+            </div>
+            <div class="producto_9" data-tallas="M" data-nombre="Jeans Brisa">
+                <img src="imagenes/c70e389f1cdd7be46c251236d6a7c006.jpg" data-color="" alt="" />
+                <h4>Jeans</h4>
+                <p>$130.000</p>
+                <div class="descripcion_9">
+                    <h4>
+                        Jeans Brisa
+                    </h4><br>
+                    <p>son tu compañero perfecto para un estilo fresco y relajado. Confeccionados con denim ligero y
+                        transpirable, estos jeans ofrecen comodidad y libertad de movimiento en cada paso.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <h2 class="contenedor_contacto_titulo">clothingsouls</h2>
+    <div class="contenedor_informacion">
+        <div class="contenedor_contacto">
+            <h4>CONTACTO</h4>
+            <br />
+            <p>313488372478</p>
+            <p>Escribenos tus dudas</p>
+            <p>Tiendas fisicas</p>
+            <img src="imagenes/logofinal.png" alt="cargando" class="imagen_inferior_contenedor" />
+        </div>
+        <div class="contenedor_contacto">
+            <h4>NECESITAS AYUDA</h4>
+            <br />
+            <p>Envíos</p>
+            <p>Preguntas frecuentes</p>
+            <p>Devoluciones y garantÍas</p>
+        </div>
+
+        <div class="contenedor_contacto">
+            <h4>SIGUENOS</h4>
+            <br />
+            <i class="fa-brands fa-facebook imagenes_logos_contenedor"></i>
+            <i class="fa-brands fa-square-whatsapp imagenes_logos_contenedor"></i>
+            <i class="fa-brands fa-instagram imagenes_logos_contenedor"></i>
+            <i class="fa-brands fa-tiktok imagenes_logos_contenedor"></i>
+            <h5 class="titulo_informacion">2024 clothingsouls</h5>
+        </div>
+    </div>
+
+    <script src="javascript/seccion_mujeres.js"></script>
 </body>
 
 </html>

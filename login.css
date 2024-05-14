@@ -78,8 +78,8 @@
 
    .form-register {
      width: 400px;
-     /* background: #e9ecef; */
-     padding: 30px;
+/*      background-color: aqua; 
+ */     padding: 30px;
      margin: 800px;
      margin-top: 58px;
      border-radius: 4px;
@@ -88,6 +88,7 @@
      /*  box-shadow: 7px 13px 30px #fff; */
    }
 
+  
    .form-register h4 {
      font-size: 30px;
      margin-bottom: 10px;
@@ -122,6 +123,11 @@
    .form-register a:hover {
      color: #ffea00;
      text-decoration: underline;
+   }
+
+
+   .input-with-icon input{
+    width: 400px;
    }
 
    .button-19 {

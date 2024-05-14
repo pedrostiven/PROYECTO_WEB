@@ -42,6 +42,7 @@ for (const checkbox of checkboxes) {
 
 //SECCION DE COLORES
 
+
 // Seleccionar todos los elementos de color
 const colores = document.querySelectorAll('.color');
 
@@ -217,3 +218,6 @@ function resetProductVisibility() {
 }
 
 document.getElementById('searchName').addEventListener('input', filterProducts);
+
+
+ 

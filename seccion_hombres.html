@@ -11,7 +11,7 @@
 
 <body>
     <div class="parte_superior">
-        <img src="imagenes/logofinal.png" alt="logo" class="imagen_logo" />
+        <a href="inicio_pagina.html"><img src="imagenes/logofinal.png" alt="logo" class="imagen_logo" /></a>
         <a href="seccion_hombres.html">
             <h5 class="texto">HOMBRE</h5>
         </a>
@@ -24,8 +24,9 @@
         <a href="carrito.html">
             <h5 class="texto">SALE</h5>
         </a>
-        <a href="login.html"><i class="fa-solid fa-user imagen"></i></a>
+        <a href="login.php"><i class="fa-solid fa-user imagen"></i></a>
         <i class="fa-solid fa-magnifying-glass imagen"></i>
+        <input type="text" id="searchName" class="searchBar" placeholder="Buscar por nombre" style="display: none;">
         <a href="carrito.html"><i class="fa-solid fa-cart-shopping imagen"></i></a>
     </div>
 
@@ -108,7 +109,7 @@
     <div class="contenedor_medio_imagenes">
 
         <div class="contenedor_medio_1">
-            <div class="producto" data-tallas="S" >
+            <div class="producto" data-tallas="S" data-nombre="Camiseta Ultraflex">
                 <img src="imagenes/camisetas_1.webp" data-color="blanco" alt=""  />
                 <h4>Camisetas</h4>
                 <p>$130.000</p>
@@ -120,7 +121,7 @@
                         estilo en uno.</p>
                 </div>
             </div>
-            <div class="producto" data-tallas="S">
+            <div class="producto" data-tallas="S" data-nombre="Camiseta SupraSoft">
                 <img src="imagenes/camiseta_2.jpg" data-color="rojo" alt="" />
                 <h4>Camisetas</h4>
                 <p>$120.000</p>
@@ -131,7 +132,7 @@
                     </p>
                 </div>
             </div>
-            <div class="producto" data-tallas="M">
+            <div class="producto" data-tallas="M" data-nombre="Camiseta FlexFit">
                 <img src="imagenes/camisetas_3.webp" data-color="blanco" alt="" />
                 <h4>Camisetas</h4>
                 <p>$110.000</p>
@@ -148,7 +149,7 @@
 
 
         <div class="contenedor_medio_2">
-            <div class="producto_2" data-tallas="L">
+            <div class="producto_2" data-tallas="L" data-nombre="Camisa PremiumFit">
                 <img src="imagenes/camisas_1.webp" data-color="azul" alt="" />
                 <h4>Camisa</h4>
                 <p>$20.000</p>
@@ -160,7 +161,7 @@
                     </p>
                 </div>
             </div>
-            <div class="producto_2" data-tallas="L">
+            <div class="producto_2" data-tallas="L" data-nombre="Camisa Clásica ComfortFit">
                 <img src="imagenes/camisas_2.webp" data-color="rojo" alt="" />
                 <h4>Camisa</h4>
                 <p>$40.000</p>
@@ -174,7 +175,7 @@
                     </p>
                 </div>
             </div>
-            <div class="producto_2" data-tallas="L">
+            <div class="producto_2" data-tallas="L" data-nombre="camisa FlexFit">
                 <img src="imagenes/camisas_3.webp" data-color="negro" alt="" />
                 <h4>Camisa</h4>
                 <p>$43.000</p>
@@ -190,7 +191,7 @@
         </div>
 
         <div class="contenedor_medio_3">
-            <div class="producto_3" data-tallas="L">
+            <div class="producto_3" data-tallas="L" data-nombre="Tank Top FlexFit">
                 <img src="imagenes/tanks_1.jpg" data-color="blanco" alt="" />
                 <h4>Tanks</h4>
                 <p>$20.500</p>
@@ -202,7 +203,7 @@
                     </p>
                 </div>
             </div>
-            <div class="producto_3" data-tallas="XL">
+            <div class="producto_3" data-tallas="XL" data-nombre="Tank Top ActiveCool">
                 <img src="imagenes/tanks_2.jpg" data-color="gris" alt="" />
                 <h4>Tanks</h4>
                 <p>$140.000</p>
@@ -214,7 +215,7 @@
                     </p>
                 </div>
             </div>
-            <div class="producto_3" data-tallas="XL">
+            <div class="producto_3" data-tallas="XL" data-nombre="Tank Top FreedomFit">
                 <img src="imagenes/tanks_3.jpg" data-color="gris" alt="" />
                 <h4>Tanks</h4>
                 <p>$443.000</p>
@@ -231,7 +232,7 @@
 
 
         <div class="contenedor_medio_4">
-            <div class="producto_4" data-tallas="S">
+            <div class="producto_4" data-tallas="S" data-nombre="Polo FlexComfort">
                 <img src="imagenes/polo_1.jpg" data-color="gris" alt="" />
                 <h4>Polo</h4>
                 <p>$10.500</p>
@@ -243,7 +244,7 @@
                     </p>
                 </div>
             </div>
-            <div class="producto_4" data-tallas="M">
+            <div class="producto_4" data-tallas="M" data-nombre="Polo FlexFit">
                 <img src="imagenes/polo_2.png" data-color="rojo" alt="" />
                 <h4>Polo</h4>
                 <p>$122.000</p>
@@ -257,7 +258,7 @@
                     </p>
                 </div>
             </div>
-            <div class="producto_4" data-tallas="M">
+            <div class="producto_4" data-tallas="M" data-nombre="Polo ActiveStyle">
                 <img src="imagenes/polo_3.jpg" data-color="blanco" alt="" />
                 <h4>Polo</h4>
                 <p>$453.000</p>
@@ -275,7 +276,7 @@
 
 
         <div class="contenedor_medio_5">
-            <div class="producto_5" data-tallas="S">
+            <div class="producto_5" data-tallas="S" data-nombre="Buzo TechComfort">
                 <img src="imagenes/Buzo_1.webp" data-color="negro" alt="" />
                 <h4>Buzos</h4>
                 <p>$54.500</p>
@@ -287,7 +288,7 @@
                     </p>
                 </div>
             </div>
-            <div class="producto_5" data-tallas="S">
+            <div class="producto_5" data-tallas="S" data-nombre="Buzo ComfortTech">
                 <img src="imagenes/buzo_2.webp" data-color="gris" alt="" />
                 <h4>Buzos</h4>
                 <p>$176.000</p>
@@ -299,7 +300,7 @@
                     </p>
                 </div>
             </div>
-            <div class="producto_5" data-tallas="L">
+            <div class="producto_5" data-tallas="L" data-nombre="Buzo FlexFit">
                 <img src="imagenes/buzo_3.webp" data-color="negro" alt="" />
                 <h4>Buzos</h4>
                 <p>$90.000</p>
@@ -317,7 +318,7 @@
 
 
         <div class="contenedor_medio_6">
-            <div class="producto_6" data-tallas="XL">
+            <div class="producto_6" data-tallas="XL" data-nombre="Pantalones ActiveFlex">
                 <img src="imagenes/pantalones_1.png" data-color="negro" alt="" />
                 <h4>Pantalones</h4>
                 <p>$54.700</p>
@@ -330,7 +331,7 @@
                     </p>
                 </div>
             </div>
-            <div class="producto_6" data-tallas="XL">
+            <div class="producto_6" data-tallas="XL" data-nombre="Pantalones FlexComfort">
                 <img src="imagenes/pantalones_2.jpg" data-color="negro" alt="" />
                 <h4>Pantalones</h4>
                 <p>$176.700</p>
@@ -343,7 +344,7 @@
                     </p>
                 </div>
             </div>
-            <div class="producto_6" data-tallas="XL">
+            <div class="producto_6" data-tallas="XL" data-nombre="Pantalones ActiveStyle">
                 <img src="imagenes/pantalones_3.jpg" data-color="gris" alt="" />
                 <h4>Pantalones</h4>
                 <p>$97.000</p>
@@ -361,7 +362,7 @@
 
 
         <div class="contenedor_medio_7">
-            <div class="producto_7" data-tallas="XL">
+            <div class="producto_7" data-tallas="XL" data-nombre="Jeans UrbanFlex">
                 <img src="imagenes/jeans_1.webp" data-color="azul_claro" alt="" />
                 <h4>Jeans</h4>
                 <p>$54.700</p>
@@ -373,7 +374,7 @@
                     </p>
                 </div>
             </div>
-            <div class="producto_7" data-tallas="XL">
+            <div class="producto_7" data-tallas="XL" data-nombre="Jeans FlexStyle">
                 <img src="imagenes/jeans_2.jpg" data-color="azul"  alt="" />
                 <h4>Jeans</h4>
                 <p>$176.700</p>
@@ -386,7 +387,7 @@
                     </p>
                 </div>
             </div>
-            <div class="producto_7" data-tallas="XL">
+            <div class="producto_7" data-tallas="XL" data-nombre="Jeans UrbanChic">
                 <img src="imagenes/jeans_3.webp" data-color="azul_claro" alt="" />
                 <h4>Jeans</h4>
                 <p>$97.000</p> 
@@ -402,7 +403,7 @@
         </div>
 
         <div class="contenedor_medio_8">
-            <div class="producto_8" data-tallas="L">
+            <div class="producto_8" data-tallas="L" data-nombre="Joggers FlexComfort">
                 <img src="imagenes/joggers_1.webp" data-color="gris" alt="" />
                 <h4>Joggers</h4>
                 <p>$60.000</p>
@@ -414,7 +415,7 @@
                     </p>
                 </div>
             </div>
-            <div class="producto_8" data-tallas="L">
+            <div class="producto_8" data-tallas="L" data-nombre="Joggers UrbanFlex">
                 <img src="imagenes/joggers_2.webp" data-color="gris" alt="" />
                 <h4>Joggers</h4>
                 <p>$500.000</p>
@@ -427,7 +428,7 @@
                     </p>
                 </div>
             </div>
-            <div class="producto_8" data-tallas="L">
+            <div class="producto_8" data-tallas="L" data-nombre="Joggers FlexStyle">
                 <img src="imagenes/joggers_3.jpeg" data-color="gris" alt="" />
                 <h4>Joggers</h4>
                 <p>$130.000</p>
@@ -444,7 +445,7 @@
         </div>
 
         <div class="contenedor_medio_9">
-            <div class="producto_9" data-tallas="L">
+            <div class="producto_9" data-tallas="L" data-nombre="Shorts ActiveBreathe">
                 <img src="imagenes/short_1.webp" data-color="negro" alt="" />
                 <h4>short</h4>
                 <p>$60.000</p>
@@ -457,7 +458,7 @@
                     </p>
                 </div>
             </div>
-            <div class="producto_9" data-tallas="S">
+            <div class="producto_9" data-tallas="S" data-nombre="Shorts BreatheLite">
                 <img src="imagenes/short_2.avif" data-color="azul"  alt="" />
                 <h4>short</h4>
                 <p>$500.000</p>
@@ -469,9 +470,9 @@
                     </p>
                 </div>
             </div>
-            <div class="producto_9" data-tallas="S">
+            <div class="producto_9" data-tallas="S" data-nombre="Shorts FlexCool">
                 <img src="imagenes/short_3.webp" data-color="gris" alt="" />
-                <h4>Joggers</h4>
+                <h4>short</h4>
                 <p>$130.000</p>
                 <div class="descripcion_9">
                     <h4>

@@ -47,21 +47,25 @@
             </li>
         </ul>
     </div>
+
     <section class="form-register">
-        <h4>Clothingsouls</h4>
-        <p>Login</p>
+    <h4>Clothingsouls</h4>
+    <p>Login</p>
+    <form action="php/login_usuario.php" method="POST">
         <div class="input-with-icon">
             <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
             <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-          </div>          
+        </div>
         <div class="input-with-icon">
             <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
-            <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña">
+            <input class="controls" type="password" name="contrasena" id="contrasena" placeholder="Ingrese su Contraseña">
         </div>
         <p>Estoy de acuerdo con <a href="https://www.nike.com.ar/terminos-y-condiciones#:~:text=Estas%20son%20algunas%20reglas%20b%C3%A1sicas%3A%201%20Act%C3%BAe%20con,con%20la%20Plataforma.%203%20Sea%20usted%20mismo.%20">Terminos y Condiciones</a></p>
         <button class="button-19" role="button">Iniciar Sesión</button>
-        <p><a href="registro.html">Registrarse</a></p>
-    </section>
+    </form>
+    <p><a href="registro.php">Registrarse</a></p>
+</section>
+
 </body>
 
 </html>

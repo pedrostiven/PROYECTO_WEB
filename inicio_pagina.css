@@ -1,6 +1,6 @@
 /* *PARTE SUPERIOR DE LA PAGINA DE INICIO */
 
-.parte_superior {
+ .parte_superior {
     background-color: black;
     width: 100%;
     height: 110px;
@@ -50,7 +50,7 @@
 
 .parte_superior i:hover {
     color: #ffd500;
-}
+} 
 
 /* *PARTE DEL MEDIOSUPERIOR DE LA PAGINA DE INICIO  */
 
