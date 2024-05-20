@@ -21,13 +21,20 @@
         <a href="accesorios.html">
             <h5 class="texto">COSAS</h5>
         </a>
-        <a href="carrito.html">
-            <h5 class="texto">SALE</h5>
-        </a>
+        
+        <h5 class="texto">SALE</h5>
+
         <a href="login.php"><i class="fa-solid fa-user imagen"></i></a>
         <i class="fa-solid fa-magnifying-glass imagen"></i>
         <input type="text" id="searchName" class="searchBar" placeholder="Buscar por nombre" style="display: none;">
-        <a href="carrito.html"><i class="fa-solid fa-cart-shopping imagen"></i></a>
+        <a href="#" id="logo-carrito"><i class="fa-solid fa-cart-shopping imagen"></i><span
+                id="cuenta-carrito">0</span></a>
+
+        <div id="carrito" class="carrito">
+            <h2>Carrito de compras</h2>
+            <div id="carrito-items"></div>
+            <div id="carrito-total">Total: $0</div>
+        </div>
     </div>
 
     <div class="seccion_titulos">
@@ -47,32 +54,32 @@
     <div class="categorias_checkbox">
         <div class="bordes"></div>
         <div class="checkboxes">
-            <input class="label" type="checkbox" name="Shorts" id="categoria1" 
-            data-image="imagenes/short1.jpg imagenes/short2.jpg imagenes/short3.jpg" />
+            <input class="label" type="checkbox" name="Shorts" id="categoria1"
+                data-image="imagenes/short1.jpg imagenes/short2.jpg imagenes/short3.jpg" />
             <label class="label" for="">Shorts</label><br>
             <input class="label" type="checkbox" name="Tops" id="categoria2"
-            data-image="imagenes/top1.jpg imagenes/top2.jpg imagenes/top3.jpg" />
+                data-image="imagenes/top1.jpg imagenes/top2.jpg imagenes/top3.jpg" />
             <label class="label" for="">Tops</label><br>
-            <input class="label" type="checkbox" name="Falda" id="categoria3" 
-            data-image="imagenes/falda1.jpg imagenes/falda2.jpg imagenes/falda3.jpg"/>
+            <input class="label" type="checkbox" name="Falda" id="categoria3"
+                data-image="imagenes/falda1.jpg imagenes/falda2.jpg imagenes/falda3.jpg" />
             <label class="label" for="">Falda</label><br>
             <input class="label" type="checkbox" name="Cargo" id="categoria4"
-            data-image="imagenes/cargo1.jpg imagenes/cargo2.jpg imagenes/cargo3.jpg" />
+                data-image="imagenes/cargo1.jpg imagenes/cargo2.jpg imagenes/cargo3.jpg" />
             <label class="label" for="">Cargo</label><br>
-            <input class="label" type="checkbox" name="Buzos" id="categoria5" 
-            data-image="imagenes/camiseta_mujer1.jpg imagenes/camiseta_mujer2.jpg imagenes/camiseta_mujer3.jpg"/>
+            <input class="label" type="checkbox" name="Buzos" id="categoria5"
+                data-image="imagenes/camiseta_mujer1.jpg imagenes/camiseta_mujer2.jpg imagenes/camiseta_mujer3.jpg" />
             <label class="label" for="">Buzos</label><br>
-            <input class="label" type="checkbox" name="Vestido" id="categoria6" 
-            data-image="imagenes/vestido1.jpg imagenes/vestido2.jpg imagenes/vestido3.jpg"/>
+            <input class="label" type="checkbox" name="Vestido" id="categoria6"
+                data-image="imagenes/vestido1.jpg imagenes/vestido2.jpg imagenes/vestido3.jpg" />
             <label class="label" for="">Vestido</label><br>
-            <input class="label" type="checkbox" name="Blusa" id="categoria7" 
-            data-image="imagenes/faa40beb736c2e0a9ea8c14851888b36.jpg imagenes/be514e0fe622b583e805e24c738256db.jpg imagenes/bd9355c7967e7eafb65eabcb4ed25e49.jpg" />
+            <input class="label" type="checkbox" name="Blusa" id="categoria7"
+                data-image="imagenes/faa40beb736c2e0a9ea8c14851888b36.jpg imagenes/be514e0fe622b583e805e24c738256db.jpg imagenes/bd9355c7967e7eafb65eabcb4ed25e49.jpg" />
             <label class="label" for="">Blusa</label><br>
             <input class="label" type="checkbox" name="Joggers" id="categoria8"
-            data-image="imagenes/9909318d3b6a6a96629acfb9a5e6e36e.jpg imagenes/8b0e4a5cec486a1d9ced5d2af583fd4c.jpg imagenes/779ca0913a847ec0eb61ee8d903d4344.jpg" />
+                data-image="imagenes/9909318d3b6a6a96629acfb9a5e6e36e.jpg imagenes/8b0e4a5cec486a1d9ced5d2af583fd4c.jpg imagenes/779ca0913a847ec0eb61ee8d903d4344.jpg" />
             <label class="label" for="">Joggers</label><br>
             <input class="label" type="checkbox" name="Jeans" id="categoria9"
-            data-image="imagenes/c73c1f53404fdb145c174d3ba02e3ce2.jpg imagenes/66eac8bf49a33a37e6bedd59a66341e9.jpg imagenes/c70e389f1cdd7be46c251236d6a7c006.jpg" />
+                data-image="imagenes/c73c1f53404fdb145c174d3ba02e3ce2.jpg imagenes/66eac8bf49a33a37e6bedd59a66341e9.jpg imagenes/c70e389f1cdd7be46c251236d6a7c006.jpg" />
             <label class="label" for="">Jeans</label><br>
         </div>
     </div>
@@ -120,6 +127,7 @@
                         y con movilidad en cada actividad. Con un corte favorecedor y una variedad de colores y
                         estampados, son perfectos para cualquier ocasión.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto" data-tallas="S" data-nombre="Shorts Livianos">
@@ -132,6 +140,7 @@
                         movimiento en cualquier situación. Con opciones de color y diseño para todos los gustos, son la
                         elección perfecta para lucir con estilo en días soleados.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto" data-tallas="S" data-nombre="Brisa Shorts">
@@ -146,6 +155,7 @@
                         impecable. Con una variedad de colores y estampados para elegir, son la opción ideal para
                         cualquier actividad bajo el sol.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
         </div>
@@ -163,6 +173,7 @@
                         perfecto para combinar con cualquier prenda. Disponible en una variedad de colores y estampados,
                         es la elección versátil para tu verano.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto_2" data-tallas="M" data-nombre="Elegance Top">
@@ -177,6 +188,7 @@
                         cualquier ocasión. Disponible en una variedad de colores clásicos, es la opción versátil que
                         necesitas en tu armario.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto_2" data-tallas="M" data-nombre="Top Breeze">
@@ -192,6 +204,7 @@
                         atuendo. Disponible en una gama de tonos vibrantes y estampados chic, es el compañero ideal para
                         tu verano con estilo.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
         </div>
@@ -209,6 +222,7 @@
                         ya sea para una salida casual o una ocasión especial. Disponible en una variedad de colores y
                         estilos, es la pieza imprescindible para tu guardarropa de verano.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto_3" data-tallas="XL" data-nombre="Falda Veraniega">
@@ -223,6 +237,7 @@
                         paseos por la playa hasta salidas urbanas. Disponible en una paleta de colores refrescantes,
                         esta falda se convierte en el complemento perfecto para tu verano lleno de aventuras.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto_3" data-tallas="XL" data-nombre="Falda Brisa">
@@ -236,6 +251,7 @@
                     <p>te envuelve en una sensación de ligereza y elegancia. Confeccionada con telas suaves y fluidas,
                         esta falda es perfecta para los días soleados.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
         </div>
@@ -253,6 +269,7 @@
                         tejido de denim, esta prenda te ofrece comodidad y durabilidad. Su diseño presenta bolsillos
                         amplios y detalles de costura que aportan un toque moderno y versátil.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto_4" data-tallas="L" data-nombre="Cargo Fresco">
@@ -267,6 +284,7 @@
                         bolsillos utilitarios en los laterales que no solo son funcionales, sino que también agregan un
                         toque de tendencia a tu look.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto_4" data-tallas="L" data-nombre="Cargo Elegante">
@@ -282,6 +300,7 @@
                         diseño presenta detalles cuidadosamente elaborados, como bolsillos amplios y costuras
                         acentuadas, que añaden un toque de distinción a tu look.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
         </div>
@@ -299,6 +318,7 @@
                     <p>es la opción perfecta para mantenerte cómoda y con estilo en cualquier ocasión. Confeccionado con
                         telas suaves y transpirables, este buzo te envuelve en una sensación de ligereza y frescura.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto_5" data-tallas="S" data-nombre="Buzo Ligero">
@@ -311,6 +331,7 @@
                     <p> es tu compañero perfecto para días frescos y noches acogedoras. Confeccionado con tejidos suaves
                         y ligeros, este buzo ofrece comodidad sin sacrificar el estilo.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto_5" data-tallas="S" data-nombre="Buzo Fresco">
@@ -326,6 +347,7 @@
                         frescura y ligereza. Su diseño moderno y versátil lo convierte en la opción ideal para combinar
                         con tus conjuntos casuales favoritos.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
         </div>
@@ -343,6 +365,7 @@
                         este vestido ofrece comodidad y estilo en cada paso. Su diseño fluido y versátil se adapta a
                         cualquier ocasión, desde salidas casuales hasta eventos especiales.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto_6" data-tallas="M" data-nombre="">
@@ -355,6 +378,7 @@
                     <p> es tu opción número uno para lucir fresca y con estilo en los días cálidos. Confeccionado con
                         telas ligeras y transpirables, este vestido te brinda comodidad durante todo el día.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto_6" data-tallas="M" data-nombre="Vestido Brisa Marina">
@@ -370,6 +394,7 @@
                         inspirados en el mar, como estampados de conchas o colores que recuerdan al océano, que añaden
                         un toque encantador y veraniego.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
         </div>
@@ -386,6 +411,7 @@
                     <p>es sinónimo de frescura y estilo. Confeccionada con telas suaves y livianas, esta blusa te
                         envuelve en una sensación de comodidad durante todo el día.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto_7" data-tallas="L" data-nombre="Blusa Primaveral">
@@ -398,6 +424,7 @@
                     <p>es una opción encantadora para dar la bienvenida a la temporada con estilo. Confeccionada con
                         telas suaves y delicadas, esta blusa te brinda una sensación de ligereza y frescura.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto_7" data-tallas="L" data-nombre="Blusa Serenidad">
@@ -411,6 +438,7 @@
                     <p> te envuelve en una atmósfera de calma y elegancia. Confeccionada con telas suaves y fluidas,
                         esta blusa ofrece una sensación de ligereza y comodidad.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
         </div>
@@ -426,6 +454,7 @@
                     <p>son la fusión perfecta entre comodidad y estilo. Confeccionados con tejidos suaves y
                         transpirables, estos joggers te brindan una sensación de ligereza y libertad de movimiento.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto_8" data-tallas="XL" data-nombre="Joggers Livianos">
@@ -440,6 +469,7 @@
                         detalles minimalistas y una silueta ajustada que los hacen ideales para combinar con una
                         variedad de tops y calzado.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto_8" data-tallas="XL" data-nombre="Joggers Breeze">
@@ -453,6 +483,7 @@
                     <p>son la elección perfecta para un estilo casual y fresco. Confeccionados con tejidos suaves y
                         transpirables, estos joggers ofrecen comodidad y libertad de movimiento en cada paso.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
         </div>
@@ -469,6 +500,7 @@
                     <p>son la opción perfecta para un estilo fresco y casual. Confeccionados con denim ligero y
                         transpirable, estos jeans te brindan comodidad y libertad de movimiento en cualquier ocasión.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto_9" data-tallas="XL" data-nombre="Jeans Livianos">
@@ -481,6 +513,7 @@
                     <p>son tu opción esencial para un estilo cómodo y versátil. Confeccionados con denim suave y ligero,
                         estos jeans ofrecen una sensación de frescura y libertad de movimiento.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
             <div class="producto_9" data-tallas="M" data-nombre="Jeans Brisa">
@@ -494,6 +527,7 @@
                     <p>son tu compañero perfecto para un estilo fresco y relajado. Confeccionados con denim ligero y
                         transpirable, estos jeans ofrecen comodidad y libertad de movimiento en cada paso.
                     </p>
+                    <button type="button">meter al carrito</button>
                 </div>
             </div>
         </div>
@@ -530,6 +564,7 @@
         </div>
     </div>
 
+    <script src="javascript/carrito.js"></script>
     <script src="javascript/seccion_mujeres.js"></script>
 </body>
 

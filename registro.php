@@ -55,29 +55,30 @@
         <p>Registro</p>
         <div class="input-with-icon">
             <span class="input-icon"><i class="fa-solid fa-person"></i></span>
-            <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
         </div>
         <div class="input-with-icon">
             <span class="input-icon"><i class="fa-solid fa-person"></i></span>
-            <input class="controls" type="text" name="usuario" id="usuario" placeholder="usuario">
+            <input class="controls" type="text" name="usuario" id="usuario" placeholder="usuario" required>
         </div>
         <div class="input-with-icon">
             <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
-            <input class="controls" type="email" name="correo" id="email" placeholder="Gmail">
+            <input class="controls" type="email" name="correo" id="email" placeholder="Gmail" required>
         </div>
         <div class="input-with-icon">
             <span class="input-icon"><i class="fa-solid fa-phone"></i></span>
-            <input class="controls" type="tel" name="telefono" id="telefono" placeholder="Telefono">
+            <input class="controls" type="tel" name="telefono" id="telefono" placeholder="Telefono" required>
         </div>
         <div class="input-with-icon">
             <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
-            <input class="controls" type="password" name="contrasena" id="Contraseña" placeholder="Contraseña">
+            <input class="controls" type="password" name="contrasena" id="Contraseña" placeholder="Contraseña" required>
         </div>
         <p>Estoy de acuerdo con <a href="https://www.nike.com.ar/terminos-y-condiciones#:~:text=Estas%20son%20algunas%20reglas%20b%C3%A1sicas%3A%201%20Act%C3%BAe%20con,con%20la%20Plataforma.%203%20Sea%20usted%20mismo.%20">Terminos y Condiciones</a></p>
         <button class="button-19" role="button">Registrar</button>
     </form>
     <p><a href="login.php">¿Ya tienes cuenta?</a></p>
 </section>
+
 
 
 </body>

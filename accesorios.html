@@ -11,7 +11,7 @@
 
 <body>
     <div class="parte_superior">
-        <img src="imagenes/logofinal.png" alt="logo" class="imagen_logo" />
+        <a href="inicio_pagina.html"><img src="imagenes/logofinal.png" alt="logo" class="imagen_logo" /></a>
         <a href="seccion_hombres.html">
             <h5 class="texto">HOMBRE</h5>
         </a>
@@ -21,12 +21,20 @@
         <a href="accesorios.html">
             <h5 class="texto">COSAS</h5>
         </a>
-        <a href="carrito.html">
-            <h5 class="texto">SALE</h5>
-        </a>
+
+        <h5 class="texto">SALE</h5>
+
         <a href="login.php"><i class="fa-solid fa-user imagen"></i></a>
         <i class="fa-solid fa-magnifying-glass imagen"></i>
-        <a href="carrito.html"><i class="fa-solid fa-cart-shopping imagen"></i></a>
+        <input type="text" id="searchName" class="searchBar" placeholder="Buscar por nombre" style="display: none;">
+        <a href="#" id="logo-carrito"><i class="fa-solid fa-cart-shopping imagen"></i><span
+                id="cuenta-carrito">0</span></a>
+
+        <div id="carrito" class="carrito">
+            <h2>Carrito de compras</h2>
+            <div id="carrito-items"></div>
+            <div id="carrito-total">Total: $0</div>
+        </div>
     </div>
 
     <div class="seccion_titulos">
@@ -45,15 +53,20 @@
     <div class="categorias_checkbox">
         <div class="bordes"></div>
         <div class="checkboxes">
-            <input class="label" type="checkbox" name="camisetas" id="categoria1">
+            <input class="label" type="checkbox" name="camisetas" id="categoria1"
+                data-image="imagenes/bolso_1.jfif imagenes/bolso_2.jfif imagenes/bolso_3.jfif">
             <label class="label" for="categoria1">Bolsas</label><br>
-            <input class="label" type="checkbox" name="Tanks" id="categoria2">
+            <input class="label" type="checkbox" name="Tanks" id="categoria2"
+                data-image="imagenes/gorra1.jfif imagenes/gorra2.jfif imagenes/gorra3.jfif imagenes/gorra4.jfif imagenes/gorra5.jfif imagenes/gorra6.jfif">
             <label class="label" for="categoria2">Gorras</label><br>
-            <input class="label" type="checkbox" name="camisas" id="categoria3">
+            <input class="label" type="checkbox" name="camisas" id="categoria3"
+                data-image="imagenes/pines_1.jpg imagenes/pines_2.jpg imagenes/pines_3.jpg">
             <label class="label" for="categoria3">Pines</label><br>
-            <input class="label" type="checkbox" name="polos" id="categoria4">
+            <input class="label" type="checkbox" name="polos" id="categoria4"
+                data-image="imagenes/llavero_1.jpg imagenes/llavero_2.jpg imagenes/llavero_3.webp">
             <label class="label" for="categoria4">Llaveros</label><br>
-            <input class="label" type="checkbox" name="buzos" id="categoria5">
+            <input class="label" type="checkbox" name="buzos" id="categoria5"
+                data-image="imagenes/stickers_1.jpg imagenes/stickers_2.jpg imagenes/stickers_3.jpg">
             <label class="label" for="categoria5">Stickers</label><br>
         </div>
     </div>
@@ -64,89 +77,325 @@
         <div class="colores">
             <div class="color" data-color="rojo" style="background-color: red;"></div>
             <div class="color" data-color="azul" style="background-color: blue;"></div>
-            <div class="color" data-color="verde" style="background-color: green;"></div>
+            <div class="color" data-color="gris" style="background-color:gray;"></div>
             <div class="color" data-color="negro" style="background-color:black"></div>
             <div class="color" data-color="morado" style="background-color: blueviolet;"></div>
             <div class="color" data-color="azul_claro" style="background-color:azure"></div>
-            <div class="color color_2" data-color="verde" style="background-color:yellow;"></div>
-            <div class="color color_2" data-color="verde" style="background-color: chocolate;"></div>
-            <div class="color color_2" data-color="verde" style="background-color:brown;"></div>
+            <div class="color color_2" data-color="amarillo" style="background-color:yellow;"></div>
+            <div class="color color_2" data-color="chocolate" style="background-color: chocolate;"></div>
+            <div class="color color_2" data-color="rojo fuerte" style="background-color:brown;"></div>
         </div>
     </div>
-    <div class="contenedor_medio_imagenes">
-        <div class="contenedor_medio_1">
-            <img src="imagenes/bolso2 (1).jfif" alt="">
-            <img src="imagenes/bolso2 (2).jfif" alt="">
-            <img src="imagenes/bolso2 (3).jfif" alt="">
-            <h4>Bolsas</h4>
-            <p>$130.000</p>
-            <h4>Bolsas</h4>
-            <p>$120.000</p>
-            <h4>Bolsas</h4>
-            <p>$110.000</p>
 
+
+    <div class="contenedor_medio_imagenes">
+
+        <div class="contenedor_medio_1">
+            <div class="producto" data-nombre="">
+                <img src="imagenes/bolso_1.jfif" data-color="azul_claro" alt="" />
+                <h4>Bolsas</h4>
+                <p>$130.000</p>
+                <div class="descripcion">
+                    <h4>Bolso de Cuero Elegante</h4><br>
+                    <p>Este bolso de cuero genuino, de alta calidad, presenta un diseño clásico en color negro. Con
+                        dimensiones de 30 cm x 15 cm x 25 cm, cuenta con un compartimento principal con cremallera, dos
+                        bolsillos interiores, y dos bolsillos exteriores con broche magnético. </p>
+                    <button type="button">meter al carrito</button>
+                </div>
+            </div>
+            <div class="producto" data-nombre=" ">
+                <img src="imagenes/bolso_2.jfif" data-color="chocolate" alt="" />
+                <h4>Bolsas</h4>
+                <p>$120.000</p>
+                <div class="descripcion">
+                    <h4>Bolso Tote de Lona Casual </h4><br>
+                    <p>
+                        El Bolso Tote de Lona Casual es un accesorio versátil y moderno, ideal para el uso diario.
+                        Fabricado con lona resistente de alta calidad en color beige, este bolso ofrece un amplio
+                        espacio con dimensiones de 35 cm x 12 cm x 30 cm.
+                    </p>
+                    <button type="button">meter al carrito</button>
+                </div>
+            </div>
+            <div class="producto" data-nombre=" ">
+                <img src="imagenes/bolso_3.jfif" data-color="azul_claro" alt="" />
+                <h4>Bolsas</h4>
+                <p>$110.000</p>
+                <div class="descripcion">
+                    <h4>
+                        Bolso Cruzado de Cuero
+                    </h4><br>
+                    <p>
+                        El Bolso Cruzado de Cuero es la combinación perfecta de estilo y funcionalidad. Hecho de cuero
+                        genuino de alta calidad en color marrón oscuro, este bolso es ideal para llevar tus pertenencias
+                        de forma segura y con clase.
+                    </p>
+                    <button type="button">meter al carrito</button>
+                </div>
+            </div>
         </div>
+
 
         <div class="contenedor_medio_2">
-            <img src="imagenes/gorra1.jfif" alt="">
-            <img src="imagenes/gorra2.jfif" alt="">
-            <img src="imagenes/gorra3.jfif" alt="">
-            <h4>Gorras</h4>
-            <p>$50.000</p>
-            <h4>Gorras</h4>
-            <p>$40.000</p>
-            <h4>Gorras</h4>
-            <p>$43.000</p>
+            <div class="producto_2" data-nombre=" ">
+                <img src="imagenes/gorra1.jfif" data-color="gris" alt="" />
+                <h4>Gorras</h4>
+                <p>$50.000</p>
+                <div class="descripcion_2">
+                    <h4> Gorra Deportiva Ajustable</h4><br>
+                    <p>
+                        La Gorra Deportiva Ajustable está diseñada para brindarte comodidad y estilo durante tus
+                        actividades físicas. Fabricada con materiales ligeros y transpirables, esta gorra cuenta con una
+                        banda de sudor interna que absorbe la humedad, manteniéndote fresco y seco.
+                    </p>
+                    <button type="button">meter al carrito</button>
+                </div>
+            </div>
+            <div class="producto_2" data-nombre="  ">
+                <img src="imagenes/gorra2.jfif" data-color="gris" alt="" />
+                <h4>Gorras</h4>
+                <p>$40.000</p>
+                <div class="descripcion_2">
+                    <h4>
+                        Gorra Casual de Algodón
+                    </h4><br>
+                    <p>
+                        La Gorra Casual de Algodón es el complemento ideal para tus atuendos diarios. Hecha de 100%
+                        algodón, esta gorra es suave y cómoda, perfecta para usar durante todo el día.
+                    </p>
+                    <button type="button">meter al carrito</button>
+                </div>
+            </div>
+            <div class="producto_2" data-nombre=" ">
+                <img src="imagenes/gorra3.jfif" data-color="gris" alt="" />
+                <h4>Gorras</h4>
+                <p>$43.000</p>
+                <div class="descripcion_2">
+                    <h4>
+                        Gorra de Béisbol Clásica
+                    </h4><br>
+                    <p>
+                        La Gorra de Béisbol Clásica ofrece un estilo atemporal y versatilidad. Confeccionada con un
+                        tejido resistente, esta gorra presenta una visera precurvada y ojales bordados para mayor
+                        ventilación.
+                    </p>
+                    <button type="button">meter al carrito</button>
+                </div>
+            </div>
         </div>
+
+
 
         <div class="contenedor_medio_3">
-            <img src="imagenes/gorra4.jfif" alt="">
-            <img src="imagenes/gorra5.jfif" alt="">
-            <img src="imagenes/gorra6.jfif" alt="">
-            <h4>Gorras</h4>
-            <p>$60.500</p>
-            <h4>Gorras</h4>
-            <p>$140.000</p>
-            <h4>Gorras</h4>
-            <p>$443.000</p>
+            <div class="producto_3" data-nombre="  ">
+                <img src="imagenes/gorra4.jfif" data-color="chocolate" alt="" />
+                <h4>Gorras</h4>
+                <p>$60.500</p>
+                <div class="descripcion_3">
+                    <h4>Gorra de Camionero de Malla
+                    </h4><br>
+                    <p>
+                        La Gorra de Camionero de Malla combina estilo retro y funcionalidad. Su parte trasera de malla
+                        proporciona una excelente ventilación, mientras que el frontal de algodón ofrece un diseño
+                        robusto y atractivo.
+                    </p>
+                    <button type="button">meter al carrito</button>
+                </div>
+            </div>
+            <div class="producto_3" data-nombre="  ">
+                <img src="imagenes/gorra5.jfif" data-color="gris" alt="" />
+                <h4>Gorras</h4>
+                <p>$140.000</p>
+                <div class="descripcion_3">
+                    <h4>
+                        Gorra Impermeable para Exterior
+                    </h4><br>
+                    <p>
+                        La Gorra Impermeable para Exterior es ideal para actividades al aire libre en cualquier clima.
+                        Hecha de materiales impermeables y de secado rápido, esta gorra te mantiene seco y cómodo.
+                    </p>
+                    <button type="button">meter al carrito</button>
+                </div>
+            </div>
+            <div class="producto_3" data-nombre="  ">
+                <img src="imagenes/gorra6.jfif" data-color="gris" alt="" />
+                <h4>Gorras</h4>
+                <p>$443.000</p>
+                <div class="descripcion_3">
+                    <h4>
+                        Gorra de Visera Plana
+                    </h4><br>
+                    <p>
+                        La Gorra de Visera Plana es perfecta para quienes buscan un look moderno y urbano. Fabricada con
+                        materiales de alta calidad, esta gorra presenta una visera plana y un cierre de broche
+                        ajustable.
+                    </p>
+                    <button type="button">meter al carrito</button>
+                </div>
+            </div>
         </div>
+
+
 
         <div class="contenedor_medio_4">
-            <img src="imagenes/pines_1.jpg" alt="">
-            <img src="imagenes/pines_2.jpg" alt="">
-            <img src="imagenes/pines_3.jpg" alt="">
-            <h4>pin</h4>
-            <p>$100</p>
-            <h4>pin</h4>
-            <p>$200</p>
-            <h4>pin</h4>
-            <p>$600</p>
+            <div class="producto_4" data-nombre=" ">
+                <img src="imagenes/pines_1.jpg" data-color="negro" alt="" />
+                <h4>pin</h4>
+                <p>$100</p>
+                <div class="descripcion_4">
+                    <h4>
+                        Pin Metálico Esmaltado
+                    </h4><br>
+                    <p>
+                        El Pin Metálico Esmaltado es un accesorio elegante y duradero, ideal para personalizar tus
+                        prendas o accesorios. Confeccionado en metal de alta calidad y recubierto con un esmalte
+                        resistente, este pin ofrece un diseño detallado y vibrante.
+                    </p>
+                    <button type="button">meter al carrito</button>
+                </div>
+            </div>
+            <div class="producto_4" data-nombre=" ">
+                <img src="imagenes/pines_2.jpg" data-color="negro" alt="" />
+                <h4>pin</h4>
+                <p>$200</p>
+                <div class="descripcion_4">
+                    <h4>
+                        Pin Acrílico Personalizado
+
+                    </h4><br>
+                    <p>
+                        El Pin Acrílico Personalizado es perfecto para expresar tu estilo único.
+                    </p>
+                    <button type="button">meter al carrito</button>
+                </div>
+            </div>
+            <div class="producto_4" data-nombre=" ">
+                <img src="imagenes/pines_3.jpg" data-color="morado" alt="" />
+                <h4>pin</h4>
+                <p>$600</p>
+                <div class="descripcion_4">
+                    <h4>
+                        Pin de Madera Grabado
+                    </h4><br>
+                    <p>
+                        El Pin de Madera Grabado combina artesanía y estilo natural. Hecho de madera sostenible y
+                        grabado con precisión láser, este pin ofrece un diseño rústico y ecológico.
+                    </p>
+                    <button type="button">meter al carrito</button>
+                </div>
+            </div>
         </div>
+
+
+
+
 
         <div class="contenedor_medio_5">
-            <img src="imagenes/llavero_1.jpg" alt="">
-            <img src="imagenes/llavero_2.jpg" alt="">
-            <img src="imagenes/llavero_3.webp" alt="">
-            <h4>llavero</h4>
-            <p>$5400</p>
-            <h4>llavero</h4>
-            <p>$1700</p>
-            <h4>llavero</h4>
-            <p>$900</p>
-        </div>
+            <div class="producto_5" data-nombre=" ">
+                <img src="imagenes/llavero_1.jpg" data-color="gris" alt="" />
+                <h4>llavero</h4>
+                <p>$5400</p>
+                <div class="descripcion_5">
+                    <h4>
+                        Llavero de Cuero Personalizado
 
-        <div class="contenedor_medio_6">
-            <img src="imagenes/stickers_1.jpg" alt="">
-            <img src="imagenes/stickers_2.jpg" alt="">
-            <img src="imagenes/stickers_3.jpg" alt="">
+                    </h4><br>
+                    <p>
+                        El Llavero de Cuero Personalizado es un accesorio elegante y funcional, ideal para mantener tus
+                        llaves organizadas con estilo.
+                    </p>
+                    <button type="button">meter al carrito</button>
+                </div>
+            </div>
+            <div class="producto_5" data-nombre=" ">
+                <img src="imagenes/llavero_2.jpg" data-color="gris" alt="" />
+                <h4>llavero</h4>
+                <p>$1700</p>
+                <div class="descripcion_5">
+                    <h4>
+                        Llavero Metálico Multifuncional
+
+                    </h4><br>
+                    <p>
+                        El Llavero Metálico Multifuncional es una herramienta versátil y práctica para tu día a día.
+                        Hecho de acero inoxidable resistente, este llavero no solo mantiene tus llaves seguras, sino que
+                        también incluye funcionalidades adicionales como abrebotellas y destornillador.
+                    </p>
+                    <button type="button">meter al carrito</button>
+                </div>
+            </div>
+            <div class="producto_5" data-nombre=" ">
+                <img src="imagenes/llavero_3.webp" data-color="rojo alt="" />
+                <h4>llavero</h4>
+                <p>$900</p>
+                <div class=" descripcion_5">
+                <h4>
+                    Llavero Acrílico con Diseño a Color
+                </h4><br>
+                <p>
+                    El Llavero Acrílico con Diseño a Color es una opción vibrante y duradera para quienes buscan añadir
+                    un toque de personalidad a sus llaves. Fabricado en acrílico de alta calidad, presenta un diseño
+                    impreso a todo color que resiste el desgaste diario.
+                </p>
+                <button type="button">meter al carrito</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contenedor_medio_6">
+        <div class="producto_6" data-nombre=" ">
+            <img src="imagenes/stickers_1.jpg" data-color="azul" alt="" />
             <h4>stickers</h4>
             <p>$300</p>
+            <div class="descripcion_6">
+                <h4>
+                    Stickers Decorativos de Vinilo
+
+                </h4><br>
+                <p>
+                    Los Stickers Decorativos de Vinilo son una forma divertida y creativa de personalizar tus
+                    pertenencias. Fabricados con vinilo de alta calidad, estos stickers son resistentes al agua y
+                    duraderos, ideales para usar en laptops, teléfonos, cuadernos y más.
+                </p>
+                <button type="button">meter al carrito</button>
+            </div>
+        </div>
+        <div class="producto_6" data-nombre=" ">
+            <img src="imagenes/stickers_2.jpg" data-color="blanco" alt="" />
             <h4>stickers</h4>
             <p>$200</p>
+            <div class="descripcion_6">
+                <h4>
+                    Stickers 3D de Gel Transparente
+
+                </h4><br>
+                <p>
+                    Los Stickers 3D de Gel Transparente son una manera única de dar vida a tus objetos cotidianos.
+                    Hechos con un gel transparente y flexible, estos stickers crean un efecto tridimensional que agrega
+                    profundidad y textura a tus artículos.
+                </p>
+                <button type="button">meter al carrito</button>
+            </div>
+        </div>
+        <div class="producto_6" data-nombre=" ">
+            <img src="imagenes/stickers_3.jpg" data-color="morado" alt="" />
             <h4>stickers</h4>
             <p>$100</p>
-        </div>
+            <div class="descripcion_6">
+                <h4>
+                    Stickers Reflectantes de Seguridad
 
+                </h4><br>
+                <p>
+                    Los Stickers Reflectantes de Seguridad son una solución práctica para aumentar tu visibilidad
+                    durante la noche. Fabricados con material reflectante de alta calidad, estos stickers son ideales
+                    para aplicar en cascos, bicicletas, o cualquier objeto que necesite ser visto en la oscuridad.
+                </p>
+                <button type="button">meter al carrito</button>
+            </div>
+        </div>
+    </div>
     </div>
 
 
@@ -178,6 +427,10 @@
             <h5 class="titulo_informacion">2024 clothingsouls</h5>
         </div>
     </div>
+
+
+    <script src="javascript/carrito.js"></script>
+    <script src="javascript/accesorios.js"></script>
 
 </body>
 

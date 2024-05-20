@@ -39,7 +39,6 @@ for (const checkbox of checkboxes) {
 
 
 
-
 //SECCION DE COLORES
 
 // Seleccionar todos los elementos de color
@@ -77,40 +76,6 @@ filtrarImagenesPorColores();
 
 
 
-
-//SECCION DE TALLAS 
-
-// Seleccionar el elemento select de tallas
-const selectTallas = document.getElementById('talla');
-
-// Seleccionar todos los contenedores de productos
-const contenedoresProductos = document.querySelectorAll('.producto, .producto_2, .producto_3, .producto_4, .producto_5, .producto_6, .producto_7, .producto_8, .producto_9');
-
-// Función para mostrar u ocultar productos según la talla seleccionada
-function filtrarPorTalla(talla) {
-  contenedoresProductos.forEach(contenedor => {
-    const tallasDisponibles = contenedor.dataset.tallas.split(',');
-    if (talla === '') {
-      // Mostrar todos los productos si no hay talla seleccionada
-      contenedor.style.display = 'block';
-    } else if (tallasDisponibles.includes(talla)) {
-      // Mostrar el producto si está disponible en la talla seleccionada
-      contenedor.style.display = 'block';
-    } else {
-      // Ocultar el producto si no está disponible en la talla seleccionada
-      contenedor.style.display = 'none';
-    }
-  });
-}
-
-// Agregar evento de cambio al select de tallas
-selectTallas.addEventListener('change', () => {
-  const tallaSeleccionada = selectTallas.value;
-  filtrarPorTalla(tallaSeleccionada);
-});
-
-// Mostrar todos los productos al cargar la página
-filtrarPorTalla('');
 
 
 
@@ -169,6 +134,8 @@ ordenarProductos('relevancia');
 
 
 
+
+
 //seccion de lupa
 
 const searchIcon = document.querySelector('.fa-solid.fa-magnifying-glass');
@@ -221,13 +188,4 @@ document.getElementById('searchName').addEventListener('input', filterProducts);
 
 
 
-//seccion de imagen al carrito 
 
-function agregarAlCarrito(idProducto) {
-  // Obtener la ruta de la imagen correspondiente al ID del producto
-  var rutaImagen = obtenerRutaImagen(idProducto);
-
-  // Cambiar dinámicamente la imagen en la sección del carrito
-  document.getElementById('imagenCarrito').src = rutaImagen;
-}
- 
