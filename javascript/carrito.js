@@ -165,6 +165,7 @@ function reiniciarCarrito() {
 
 function pagar() {
     alert(`Gracias por tu compra. Total a pagar: $${carritoTotal.toFixed(2)}`);
+    window.location.href = "../zona_pagos.php";
     reiniciarCarrito();
 }
 
@@ -179,4 +180,4 @@ function actualizarCuentaCarrito() {
 
 
 
-
+  
